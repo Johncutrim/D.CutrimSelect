@@ -1,0 +1,36 @@
+/* ══════════════════════════════════════════════════════════
+   05 · MÁSCARA QUE REVELA
+   Um buraco redondo cresce no meio da cena e descobre a de baixo. Serve para mostrar antes e depois sem trocar de página.
+   ══════════════════════════════════════════════════════════ */
+
+<!-- ── HTML ──────────────────────────────────────────── -->
+<div class="js-header">
+  <div class="topo-falso">Seu cabeçalho</div>
+  <div class="mini"><div class="conteudo">conteúdo rolável</div></div>
+</div>
+
+/* ── CSS DE APOIO ───────────────────────────────────── */
+.js-mascara .fixo{position:sticky;top:0;height:210px;overflow:hidden}
+.js-mascara .cena{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:26px}
+.js-mascara .depois{background:linear-gradient(140deg,#f2f2f4,#b9b9c4);color:#0a0a0a;font-weight:600}
+.js-mascara .antes{background:linear-gradient(140deg,#2b2b33,#0e0e12);color:#fff;clip-path:circle(150% at 50% 50%)}
+.js-mascara .alto{height:900px}
+
+/* ── JAVASCRIPT ─────────────────────────────────────── */
+FX.j05 = function(card){
+  var caixa = card.querySelector('.mini');
+  var antes = card.querySelector('.antes');
+  return aoRolar(caixa, function(p){
+    var raio = 150 - p * 150;                     /* de 150% a 0 */
+    antes.style.clipPath = 'circle(' + Math.max(0, raio) + '% at 50% 50%)';
+  });
+};
+
+/* ── COMO LIGAR ─────────────────────────────────────── */
+/* Troque "document" pelo elemento que envolve a animação,
+   se você tiver mais de uma cópia na mesma página. */
+FX.j05(document);
+
+/* Fonte: vitrine de 36 animações em JavaScript do canal Não Codei.
+   Cole no seu site ou entregue para uma inteligência artificial
+   pedindo para adaptar às cores e ao conteúdo da sua página. */

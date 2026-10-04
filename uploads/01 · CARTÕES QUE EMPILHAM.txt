@@ -1,0 +1,93 @@
+/* ══════════════════════════════════════════════════════════
+   01 · CARTÕES QUE EMPILHAM
+   Cada cartão gruda no topo e o seguinte sobe por cima dele. Os de baixo encolhem e escurecem, o que cria a sensação de pilha. É o efeito de rolagem mais copiado dos últimos dois anos.
+   ══════════════════════════════════════════════════════════ */
+
+<!-- ── HTML ──────────────────────────────────────────── -->
+<div class="js-progresso">
+  <div class="trilha"><div class="barra"></div></div>
+  <div class="mini"><div class="conteudo">seu texto longo aqui</div></div>
+</div>
+
+<!-- num site real, troque .mini pela janela inteira -->
+
+/* ── CSS DE APOIO ───────────────────────────────────── */
+.js-pilha{width:100%}
+.js-pilha .folha{
+  position:sticky;top:14px;height:132px;margin-bottom:16px;border-radius:16px;
+  border:1px solid var(--border);padding:18px 20px;
+  display:flex;flex-direction:column;justify-content:space-between;
+  box-shadow:0 -10px 30px rgba(0,0,0,.5);will-change:transform;
+}
+.js-pilha .folha b{font-family:var(--display);font-size:20px;font-weight:600;color:#fff}
+.js-pilha .folha span{font-family:var(--ui);font-size:12px;color:rgba(255,255,255,.55)}
+.js-pilha .f1{background:linear-gradient(150deg,#2f2f38,#17171b)}
+.js-pilha .f2{background:linear-gradient(150deg,#3a3340,#1a171d)}
+.js-pilha .f3{background:linear-gradient(150deg,#33403f,#161b1b)}
+.js-pilha .f4{background:linear-gradient(150deg,#40353a,#1c1719)}
+
+/* ── JAVASCRIPT ─────────────────────────────────────── */
+FX.j01 = function(card){
+  var caixa = card.querySelector('.mini');
+  var folhas = [].slice.call(card.querySelectorAll('.folha'));
+  var TOPO = 14;                     /* o mesmo "top" do sticky no CSS */
+
+  /* Pegadinha do sticky: enquanto o cartão está grudado, tanto a
+     posição na tela quanto o offsetTop passam a refletir o lugar
+     deslocado, e não o original. Então a posição natural precisa
+     ser medida uma vez, com o sticky desligado. */
+  var naturais = folhas.map(function(f){
+    var antes = f.style.position;
+    f.style.position = 'static';
+    var y = f.offsetTop;
+    f.style.position = antes;
+    return y;
+  });
+
+  return aoRolar(caixa, function(){
+    folhas.forEach(function(f, i){
+      var vao = f.offsetHeight + 16;              /* altura mais a margem */
+      /* quanto a rolagem já passou do ponto onde ele começou a grudar */
+      var preso = limitar((caixa.scrollTop + TOPO - naturais[i]) / vao, 0, 1);
+      f.style.transform = 'scale(' + (1 - preso * .10) + ')';
+      f.style.filter = 'brightness(' + (1 - preso * .5) + ')';
+      f.style.zIndex = i;
+    });
+  });
+};
+
+/* ── FERRAMENTAS USADAS POR ESTE EFEITO ─────────────── */
+var lerp = function(a,b,t){ return a + (b-a)*t; };
+var limitar = function(v,min,max){ return Math.max(min, Math.min(max, v)); };
+
+/* progresso de 0 a 1 de um elemento atravessando a área visível */
+function progressoNaTela(el){
+  var r = el.getBoundingClientRect();
+  var alt = window.innerHeight || 800;
+  return limitar((alt - r.top) / (alt + r.height), 0, 1);
+}
+
+/* laço de animação que só roda enquanto o elemento está visível */
+function laco(card, passo){
+  var id = null, vivo = false, respondeu = false;
+  function rodar(){ passo(); id = requestAnimationFrame(rodar); }
+  function ligar(){ if(!vivo){ vivo = true; rodar(); } }
+  function desligar(){ if(vivo){ vivo = false; cancelAnimationFrame(id); } }
+  var obs = new IntersectionObserver(function(e){
+    respondeu = true;
+    e[0].isIntersecting ? ligar() : desligar();
+  },{threshold:0});
+  obs.observe(card);
+  /* se o observador nao responder, comeca assim mesmo */
+  var espera = setTimeout(function(){ if(!respondeu) ligar(); }, 1500);
+  return function(){ clearTimeout(espera); cancelAnimationFrame(id); obs.disconnect(); };
+}
+
+/* ── COMO LIGAR ─────────────────────────────────────── */
+/* Troque "document" pelo elemento que envolve a animação,
+   se você tiver mais de uma cópia na mesma página. */
+FX.j01(document);
+
+/* Fonte: vitrine de 36 animações em JavaScript do canal Não Codei.
+   Cole no seu site ou entregue para uma inteligência artificial
+   pedindo para adaptar às cores e ao conteúdo da sua página. */

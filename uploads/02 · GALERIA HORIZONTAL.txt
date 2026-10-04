@@ -1,0 +1,44 @@
+/* ══════════════════════════════════════════════════════════
+   02 · GALERIA HORIZONTAL
+   Você rola para baixo e o conteúdo anda para o lado. O painel fica preso enquanto a fita percorre toda a largura.
+   ══════════════════════════════════════════════════════════ */
+
+<!-- ── HTML ──────────────────────────────────────────── -->
+<div class="js-parallax">
+  <div class="camada fundo"  data-vel="0.15"></div>
+  <div class="camada meio"  data-vel="0.5">2026</div>
+  <div class="camada frente" data-vel="1">Título</div>
+</div>
+
+<!-- data-vel: quanto maior, mais perto do observador -->
+
+/* ── CSS DE APOIO ───────────────────────────────────── */
+.js-horizontal .palco-h{position:sticky;top:0;height:210px;display:flex;align-items:center;overflow:hidden}
+.js-horizontal .fita-h{display:flex;gap:14px;padding:0 16px;will-change:transform}
+.js-horizontal .quadro{
+  flex:none;width:172px;height:130px;border-radius:14px;border:1px solid var(--border);
+  background:linear-gradient(150deg,#32323c,#141418);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--display);font-size:30px;color:rgba(255,255,255,.6);
+}
+.js-horizontal .alto{height:900px}
+
+/* ── JAVASCRIPT ─────────────────────────────────────── */
+FX.j02 = function(card){
+  var caixa = card.querySelector('.mini');
+  var fita = card.querySelector('.fita-h');
+  var palco = card.querySelector('.palco-h');
+  return aoRolar(caixa, function(p){
+    var curso = Math.max(0, fita.scrollWidth - palco.clientWidth);
+    fita.style.transform = 'translateX(' + (-p * curso) + 'px)';
+  });
+};
+
+/* ── COMO LIGAR ─────────────────────────────────────── */
+/* Troque "document" pelo elemento que envolve a animação,
+   se você tiver mais de uma cópia na mesma página. */
+FX.j02(document);
+
+/* Fonte: vitrine de 36 animações em JavaScript do canal Não Codei.
+   Cole no seu site ou entregue para uma inteligência artificial
+   pedindo para adaptar às cores e ao conteúdo da sua página. */
