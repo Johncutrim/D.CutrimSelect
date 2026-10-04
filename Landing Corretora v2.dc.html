@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/classical-bd6b6a4a-9308-4fbc-b97d-3f3c4df58931/styles.css">
+<script src="_ds/classical-bd6b6a4a-9308-4fbc-b97d-3f3c4df58931/_ds_bundle.js"></script>
+<script src="./image-slot-lock.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,400;1,6..96,500;0,6..96,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#0B1628;color:#F5F4F0;font-family:Inter,'Helvetica Neue',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#E3CD9F;text-decoration:none}
+a:hover{color:#F5F4F0}
+*:focus-visible{outline:2px solid #C4A05C;outline-offset:3px}
+::selection{background:#E8D9B8}
+summary::-webkit-details-marker{display:none}
+img,svg{max-width:100%}
+</style>
+</helmet>
+
+<div style="font-family:Inter,'Helvetica Neue',sans-serif;background:#0B1628;color:#F5F4F0;overflow-x:clip;overflow-y:visible">
+
+<div data-progress="" style="position:fixed;left:0;top:0;right:0;height:2px;background:#C4A05C;transform-origin:0 50%;transform:scaleX(0);z-index:200;pointer-events:none"></div>
+
+<!-- HERO -->
+<header id="topo" data-screen-label="01 Hero" style="position:relative;min-height:100svh;display:flex;flex-direction:column;background:#08111F;color:#F5F4F0;overflow:hidden">
+  <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(196,160,92,0) 34%,rgba(196,160,92,.045) 54%,rgba(196,160,92,.07) 70%,rgba(196,160,92,.035) 100%),radial-gradient(60% 40% at 50% 0%,rgba(27,49,80,.75),rgba(8,17,31,0) 70%)"></div>
+  <div data-stars="a" style="position:absolute;left:0;top:0;width:1px;height:1px;border-radius:50%;background:transparent;pointer-events:none"></div>
+  <div data-stars="b" style="position:absolute;left:0;top:0;width:1px;height:1px;border-radius:50%;background:transparent;pointer-events:none"></div>
+
+  <nav data-intro="nav" style="position:relative;z-index:40;margin:14px auto 0;width:calc(100% - 32px);max-width:880px;box-sizing:border-box;height:64px;border-radius:32px;padding:0 10px 0 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;background:rgba(255,255,255,.02);border:1px solid rgba(245,244,240,.12);-webkit-backdrop-filter:blur(16px) saturate(140%);backdrop-filter:blur(16px) saturate(140%);box-shadow:inset 0 1px 0 rgba(255,255,255,.04)">
+    <a href="#topo" style="display:flex;flex-direction:column;line-height:1;color:#F5F4F0">
+      <span style="font-size:8px;letter-spacing:.32em;text-transform:uppercase;color:#E3CD9F;font-weight:500">Patrimônio imobiliário</span>
+      <span style="margin-top:4px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:24px;font-weight:500;color:#F5F4F0">{{ brokerName }}</span>
+    </a>
+    <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex;gap:26px;font-size:13px;letter-spacing:.03em">
+        <a href="#sobre" style="color:#E6E9EE;transition:color .4s" style-hover="color:#E3CD9F">Sobre</a>
+        <a href="#imoveis" style="color:#E6E9EE;transition:color .4s" style-hover="color:#E3CD9F">Imóveis</a>
+        <a href="#numeros" style="color:#E6E9EE;transition:color .4s" style-hover="color:#E3CD9F">Mercado</a>
+        <a href="#porque" style="color:#E6E9EE;transition:color .4s" style-hover="color:#E3CD9F">Por que eu</a>
+        <a href="#contato" style="color:#E6E9EE;transition:color .4s" style-hover="color:#E3CD9F">Contato</a>
+      </div>
+      <a href="{{ waLink }}" target="_blank" rel="noopener" data-elastic="" style="position:relative;overflow:hidden;display:inline-grid;place-items:center;height:42px;padding:0 22px;border-radius:14px;color:#FFFFFF;font-size:13.5px;font-weight:500;background:linear-gradient(to top,#F6E7C1 1px,#F0DCA8 2px,#E8CD8E 3px,#DDBB72 4px,#CFA65A 5px,#B88E44 6px,#A57D3A 7px,#8F6B31 8px,#775929 9px,#5E4722 10px,#48381F 12px,#3A2F1E 13px,#2E281F 14px,#222225 16px,#1A2232 18px,#141D2D 20px,#111A2A 24px,#0F1828 30px,#0F1828 100%);box-shadow:inset 0 3px 3px -2px rgba(255,236,200,.10),inset 1px 0 0 rgba(255,255,255,.09),inset -1px 0 0 rgba(255,255,255,.09),0 1px 0 rgba(230,200,140,.38),1px 0 0 rgba(230,200,140,.17),-1px 0 0 rgba(230,200,140,.17),0 0 8px rgba(214,170,90,.10),0 2px 5px -3px rgba(240,200,120,.45);transition:transform .4s ease,filter .4s ease" style-hover="transform:translateY(-1px);filter:brightness(1.12);color:#FFFFFF" style-before="content:'';position:absolute;left:22%;right:38%;top:1px;height:1.9px;z-index:1;filter:blur(.55px);background:linear-gradient(90deg,rgba(240,210,150,0),rgba(240,210,150,.58) 34%,rgba(255,236,190,.74) 50%,rgba(240,210,150,.58) 66%,rgba(240,210,150,0))" style-after="content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:1;background:linear-gradient(90deg,rgba(255,236,200,.6),rgba(255,236,200,0) 13px),linear-gradient(270deg,rgba(255,236,200,.6),rgba(255,236,200,0) 13px);-webkit-mask:linear-gradient(to top,#000 0,#000 6px,rgba(0,0,0,.4) 12px,rgba(0,0,0,.15) 18px,rgba(0,0,0,.09) 24px,rgba(0,0,0,.02) 30px);mask:linear-gradient(to top,#000 0,#000 6px,rgba(0,0,0,.4) 12px,rgba(0,0,0,.15) 18px,rgba(0,0,0,.09) 24px,rgba(0,0,0,.02) 30px)"><span style="position:relative;z-index:2;white-space:nowrap;text-shadow:0 1px 2px rgba(10,15,25,.5)">Fale comigo</span></a>
+    </sc-if>
+    <sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}">
+      <button type="button" aria-label="Abrir menu" aria-expanded="{{ menuOpenStr }}" onClick="{{ toggleMenu }}" style="width:44px;height:44px;border:0;border-radius:14px;background:transparent;cursor:pointer;display:grid;place-content:center;gap:5px;padding:0">
+        <span style="display:block;width:20px;height:1.6px;border-radius:2px;background:#F5F4F0"></span>
+        <span style="display:block;width:20px;height:1.6px;border-radius:2px;background:#F5F4F0"></span>
+        <span style="display:block;width:14px;height:1.6px;border-radius:2px;background:#E3CD9F"></span>
+      </button>
+    </sc-if>
+    <sc-if value="{{ menuVisible }}" hint-placeholder-val="{{ false }}">
+      <div style="position:absolute;left:0;right:0;top:74px;padding:12px;border-radius:22px;border:1px solid rgba(245,244,240,.12);background:linear-gradient(180deg,rgba(11,20,36,.985),rgba(8,15,28,.99));box-shadow:0 26px 60px rgba(0,0,0,.6);display:flex;flex-direction:column;gap:2px">
+        <a href="#sobre" onClick="{{ closeMenu }}" style="font-size:16px;padding:13px 15px;border-radius:12px;color:#F5F4F0">Sobre</a>
+        <a href="#imoveis" onClick="{{ closeMenu }}" style="font-size:16px;padding:13px 15px;border-radius:12px;color:#F5F4F0">Imóveis</a>
+        <a href="#numeros" onClick="{{ closeMenu }}" style="font-size:16px;padding:13px 15px;border-radius:12px;color:#F5F4F0">Mercado em números</a>
+        <a href="#porque" onClick="{{ closeMenu }}" style="font-size:16px;padding:13px 15px;border-radius:12px;color:#F5F4F0">Por que contar comigo</a>
+        <a href="#contato" onClick="{{ closeMenu }}" style="font-size:16px;padding:13px 15px;border-radius:12px;color:#F5F4F0">Contato</a>
+        <a href="{{ waLink }}" target="_blank" rel="noopener" style="margin-top:8px;height:50px;display:grid;place-items:center;border-radius:14px;background:#C4A05C;color:#0C1E33;font-weight:600;font-size:15px">Fale comigo no WhatsApp</a>
+      </div>
+    </sc-if>
+  </nav>
+
+  <div data-hero-fade="" style="position:relative;z-index:20;display:flex;flex-direction:column;align-items:center;text-align:center;padding:clamp(44px,9vh,96px) 20px 0;max-width:1000px;margin:0 auto;box-sizing:border-box">
+    <div data-intro="badge" style="position:relative;display:flex;align-items:center;min-height:40px;max-width:100%;box-sizing:border-box;padding:6px 16px 6px 46px;border-radius:12px;border:1px solid rgba(245,244,240,.12);background:linear-gradient(to top,rgba(230,205,150,.16) 0px,rgba(230,205,150,.11) 2px,rgba(230,205,150,.06) 4px,rgba(255,255,255,.015) 9px,rgba(255,255,255,.015) 100%);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)">
+      <i style="position:absolute;left:5px;top:5px;width:30px;height:28px;border-radius:8px;display:grid;place-items:center;background:linear-gradient(to top,#E9CF95 0px,#D6B676 2px,#B08A45 4px,#8A6A32 6px,#5F4A27 9px,#2E2A27 13px,#141D2D 18px,#0F1828 28px);box-shadow:inset 1px 0 0 rgba(240,215,160,.4),inset -1px 0 0 rgba(240,215,160,.5),0 3px 8px -5px rgba(240,200,120,.6)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#F6E7C1" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"></path><path d="M5 9.5V21h14V9.5"></path><path d="M10 21v-6h4v6"></path></svg>
+      </i>
+      <span style="font-size:clamp(12px,3.3vw,13px);line-height:1.35;text-align:left;color:#F0EEE8">Consultoria em patrimônio · {{ creciLabel }}</span>
+    </div>
+    <h1 style="margin:30px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:400;font-size:clamp(42px,6.8vw,92px);line-height:1;letter-spacing:-.01em;color:#F5F4F0;text-shadow:0 0 40px rgba(214,182,118,.18)">
+      <span data-intro="h1a" style="display:block;text-wrap:balance">Construindo o cenário</span>
+      <span data-intro="h1b" style="display:block;text-wrap:balance;font-style:italic;color:#E3CD9F">das suas melhores memórias.</span>
+    </h1>
+    <p data-intro="sub" style="margin:26px 0 0;max-width:540px;font-size:clamp(15px,1.5vw,17px);line-height:1.7;font-weight:300;color:#D5DBE4;text-wrap:pretty">Imóveis de alto padrão selecionados com cuidado para o presente — e para o futuro — da sua família.</p>
+    <div data-intro="cta" style="margin-top:34px;display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
+      <a href="{{ waLink }}" target="_blank" rel="noopener" data-elastic="" style="position:relative;overflow:hidden;display:inline-grid;place-items:center;height:56px;padding:0 clamp(20px,5vw,32px);max-width:100%;box-sizing:border-box;border-radius:14px;color:#FFFFFF;font-size:clamp(14px,3.8vw,15.5px);font-weight:500;letter-spacing:.01em;background:linear-gradient(to top,#F6E7C1 1px,#F0DCA8 2px,#E8CD8E 3px,#DDBB72 4px,#CFA65A 5px,#B88E44 6px,#A57D3A 7px,#8F6B31 8px,#775929 9px,#5E4722 10px,#48381F 12px,#3A2F1E 13px,#2E281F 14px,#222225 16px,#1A2232 18px,#141D2D 20px,#111A2A 24px,#0F1828 30px,#0F1828 100%);box-shadow:inset 0 3px 3px -2px rgba(255,236,200,.10),inset 1px 0 0 rgba(255,255,255,.09),inset -1px 0 0 rgba(255,255,255,.09),1px 0 0 rgba(230,200,140,.17),-1px 0 0 rgba(230,200,140,.17),0 0 8px rgba(214,170,90,.10),0 2px 5px -3px rgba(240,200,120,.45);transition:transform .4s ease,filter .4s ease" style-hover="transform:translateY(-1px);filter:brightness(1.12);color:#FFFFFF" style-after="content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:1;background:linear-gradient(90deg,rgba(255,236,200,.6),rgba(255,236,200,0) 13px),linear-gradient(270deg,rgba(255,236,200,.6),rgba(255,236,200,0) 13px);-webkit-mask:linear-gradient(to top,#000 0,#000 6px,rgba(0,0,0,.4) 12px,rgba(0,0,0,.15) 18px,rgba(0,0,0,.09) 24px,rgba(0,0,0,.02) 30px);mask:linear-gradient(to top,#000 0,#000 6px,rgba(0,0,0,.4) 12px,rgba(0,0,0,.15) 18px,rgba(0,0,0,.09) 24px,rgba(0,0,0,.02) 30px)"><span style="position:relative;z-index:2;white-space:nowrap;text-shadow:0 1px 2px rgba(10,15,25,.5)">Agendar Consultoria Exclusiva</span></a>
+      <a href="#imoveis" style="display:inline-grid;place-items:center;height:56px;padding:0 28px;border-radius:14px;color:#F5F4F0;font-size:15px;border:1px solid rgba(245,244,240,.4);transition:all .4s ease" style-hover="border-color:#E3CD9F;color:#E3CD9F">Ver imóveis</a>
+    </div>
+  </div>
+
+  <div data-ring-stage="" data-intro="ring" onMouseEnter="{{ pauseRing }}" onMouseLeave="{{ resumeRing }}" style="position:relative;z-index:10;margin-top:-160px;height:560px;width:100%;overflow:hidden">
+    <div data-ring-scale="" style="position:absolute;left:50%;top:0;width:1172px;height:657px;margin-left:-586px;transform-origin:586px 0">
+      <div style="position:absolute;left:0;top:-116px;width:1172px;height:657px;perspective:891px;perspective-origin:586px 918px;transform-style:preserve-3d">
+        <sc-for list="{{ ringCards }}" as="c" hint-placeholder-count="0">
+          <div data-card="" style="position:absolute;left:586px;top:476px;width:176px;height:260px;margin:-130px 0 0 -88px;border-radius:14px;overflow:hidden;background:linear-gradient(155deg,#22344F,#111C2E 60%,#1E1A22);box-shadow:0 24px 46px rgba(0,0,0,.55),0 3px 8px rgba(0,0,0,.45);backface-visibility:hidden;will-change:transform;visibility:hidden">
+            <image-slot id="{{ c.slotId }}" src="{{ c.src }}" shape="rect" placeholder="Foto do imóvel"></image-slot>
+            <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(8,17,31,0) 42%,rgba(8,17,31,.88) 82%)"></div>
+            <div style="position:absolute;left:14px;right:14px;bottom:14px;pointer-events:none">
+              <div style="font-size:8px;letter-spacing:.24em;text-transform:uppercase;color:#E3CD9F">{{ c.kicker }}</div>
+              <div style="margin-top:5px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:21px;line-height:1.05;color:#FFFFFF">{{ c.name }}</div>
+            </div>
+            <div style="position:absolute;inset:0;border-radius:14px;pointer-events:none;box-shadow:inset 0 0 0 1px rgba(255,255,255,.14),inset 0 16px 30px rgba(255,255,255,.05)"></div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- SOBRE -->
+<section id="sobre" data-screen-label="02 Sobre" style="position:relative;z-index:30;max-width:1200px;margin:clamp(56px,7vw,88px) auto 0;padding:0 clamp(16px,3vw,24px);box-sizing:border-box">
+  <div data-reveal="" style="background:#0F1C30;border:1px solid rgba(245,244,240,.08);border-radius:24px;box-shadow:0 -20px 60px rgba(8,17,31,.35),0 20px 60px rgba(12,30,51,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));overflow:hidden">
+    <div style="padding:clamp(36px,6vw,72px);display:flex;flex-direction:column;justify-content:center">
+      <div style="font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#E3CD9F;font-weight:500">Sobre mim</div>
+      <h2 data-reveal="mask" style="margin:18px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:400;font-size:clamp(34px,4vw,50px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Antes de corretora, sou mãe. Sei o que um lar significa.</h2>
+      <p style="margin:24px 0 0;font-size:16px;line-height:1.8;font-weight:300;color:#C9D1DC;text-wrap:pretty">Há mais de 3 anos guio famílias na escolha do imóvel certo. Não procuro apenas metros quadrados: procuro o quintal seguro para as crianças brincarem, a sala onde a família se reúne, o silêncio de um bairro tranquilo.</p>
+      <p style="margin:16px 0 0;font-size:16px;line-height:1.8;font-weight:300;color:#C9D1DC;text-wrap:pretty">Conduzo cada negociação com a mesma integridade e fé que guiam a minha casa — com transparência, paciência e o cuidado de quem deseja ver a sua família em um lar abençoado.</p>
+      <div style="margin-top:36px;padding-top:28px;border-top:1px solid rgba(245,244,240,.12);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(10px,3vw,20px);container-type:inline-size">
+        <div>
+          <div style="font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:clamp(32px,8vw,40px);line-height:1;color:#F5F4F0">3+</div>
+          <div style="margin-top:8px;font-size:13px;line-height:1.5;color:#C9D1DC">anos no alto padrão</div>
+        </div>
+        <div>
+          <div style="font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:clamp(14px,5cqi,24px);line-height:1.3;color:#F5F4F0">Integridade</div>
+          <div style="margin-top:8px;font-size:13px;line-height:1.5;color:#C9D1DC">em cada etapa</div>
+        </div>
+        <div>
+          <div style="font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:clamp(14px,5cqi,24px);line-height:1.3;color:#F5F4F0">Acolhimento</div>
+          <div style="margin-top:8px;font-size:13px;line-height:1.5;color:#C9D1DC">do início às chaves</div>
+        </div>
+      </div>
+      <div style="margin-top:36px;display:flex">
+        <a href="{{ waLink }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:#C4A05C;color:#0C1E33;font-size:14px;font-weight:500;padding:14px 26px;border-radius:999px;transition:all .4s ease" style-hover="background:#D6B676;color:#0C1E33">Conversar comigo →</a>
+      </div>
+    </div>
+    <div style="position:relative;align-self:center;padding:14px">
+      <div data-reveal="img" style="position:relative;width:100%;aspect-ratio:4/3;border-radius:8px 8px 8px 140px;overflow:hidden">
+        <div data-parallax="0.04" style="position:absolute;inset:-24px 0">
+          <image-slot id="about-photo" src="fotos/about-photo.webp" shape="rect" placeholder="Foto profissional e espontânea da corretora"></image-slot>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VITRINE -->
+<section id="imoveis" data-screen-label="03 Vitrine" style="max-width:1200px;margin:0 auto;padding:clamp(72px,9vw,112px) clamp(20px,4vw,40px) clamp(96px,10vw,128px);box-sizing:border-box">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:48px">
+    <div style="max-width:620px">
+      <div data-reveal="" style="font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#E3CD9F;font-weight:500">Vitrine selecionada</div>
+      <h2 data-reveal="mask" style="margin:16px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:400;font-size:clamp(34px,4.4vw,56px);line-height:1.05;color:#F5F4F0;text-wrap:balance">Imóveis escolhidos para a vida que você quer construir.</h2>
+    </div>
+    <a data-reveal="" href="{{ waLink }}" target="_blank" rel="noopener" style="font-size:14px;color:#F5F4F0;border-bottom:1px solid #C4A05C;padding-bottom:4px" style-hover="color:#E3CD9F">Solicitar portfólio completo →</a>
+  </div>
+
+  <div style="display:flex;flex-wrap:wrap;gap:10px;margin:0 0 clamp(32px,4vw,52px);padding-bottom:clamp(24px,3vw,34px);border-bottom:1px solid rgba(245,244,240,.1)">
+    <sc-for list="{{ builderChips }}" as="chip" hint-placeholder-count="9">
+      <button type="button" onClick="{{ chip.onSelect }}" style="{{ chip.style }}">{{ chip.label }}</button>
+    </sc-for>
+  </div>
+
+  <div data-vitrine="" style="display:grid;grid-template-columns:{{ vitrineCols }};align-items:center;gap:clamp(28px,4vw,56px)">
+    <div data-vstage="" style="position:relative;height:clamp(380px,46vw,540px);touch-action:pan-y;cursor:grab;user-select:none">
+      <sc-for list="{{ properties }}" as="p" hint-placeholder-count="6">
+        <div data-vcard="" data-gi="{{ p.gi }}" style="position:absolute;top:50%;left:50%;width:58%;aspect-ratio:4/5;margin:0;border-radius:16px;overflow:hidden;background:#0F1C30;border:1px solid rgba(245,244,240,.14);box-shadow:0 24px 60px rgba(0,0,0,.45);transition:transform .65s cubic-bezier(.4,0,.2,1),filter .65s cubic-bezier(.4,0,.2,1),opacity .65s cubic-bezier(.4,0,.2,1),left .65s cubic-bezier(.4,0,.2,1);will-change:transform,filter,opacity">
+          <image-slot id="{{ p.slotId }}" src="{{ p.src }}" shape="rect" placeholder="Foto do imóvel"></image-slot>
+          <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(8,17,31,0) 55%,rgba(8,17,31,.55))"></div>
+        </div>
+      </sc-for>
+    </div>
+
+    <div data-vcap="" style="position:relative;z-index:30;opacity:1;transition:opacity .35s ease,translate .35s ease">
+      <div style="margin-bottom:18px;font-size:12px;letter-spacing:.2em;color:rgba(245,244,240,.45);font-variant-numeric:tabular-nums">{{ activeCount }}</div>
+      <div data-vcap-key="0" style="display:block">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:clamp(10.5px,2.6vw,12px);letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">
+          <span>MB Engenharia</span>
+          <span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span>
+          <span>ARAÇAGY · SÃO LUÍS</span>
+        </div>
+        <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Fernando de Noronha</h3>
+        <div style="margin-top:14px;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Casas duplex de 103 a 118 m² · condomínio fechado</div>
+        <div style="margin-top:22px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+      </div>
+      <div data-vcap-key="1" style="display:none">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:clamp(10.5px,2.6vw,12px);letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">
+          <span>MB Engenharia</span>
+          <span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span>
+          <span>ALTOS DO CALHAU · SÃO LUÍS</span>
+        </div>
+        <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Prime Cohama</h3>
+        <div style="margin-top:14px;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Casas duplex de 140 m² · condomínio fechado</div>
+        <div style="margin-top:22px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+      </div>
+      <div data-vcap-key="2" style="display:none">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:clamp(10.5px,2.6vw,12px);letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">
+          <span>MB Engenharia</span>
+          <span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span>
+          <span>ALTO DO CALHAU · SÃO LUÍS</span>
+        </div>
+        <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Reserva Rangedor</h3>
+        <div style="margin-top:14px;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Casas duplex de 189 m² · alto padrão exclusivo</div>
+        <div style="margin-top:22px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+      </div>
+      <div data-vcap-key="3" style="display:none">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:clamp(10.5px,2.6vw,12px);letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">
+          <span>Ergus Engenharia</span>
+          <span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span>
+          <span>RENASCENÇA · SÃO LUÍS</span>
+        </div>
+        <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Nexus Renascença</h3>
+        <div style="margin-top:14px;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Studios, 3 suítes ou salas comerciais de a m² · ecossistema urbano</div>
+        <div style="margin-top:22px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+      </div>
+      <div data-vcap-key="4" style="display:none">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:clamp(10.5px,2.6vw,12px);letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">
+          <span>Ergus Engenharia</span>
+          <span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span>
+          <span>PONTA D'AREIA · SÃO LUÍS</span>
+        </div>
+        <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Zion</h3>
+        <div style="margin-top:14px;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Apartamentos de 148 m² · 1 por andar com design biofílico</div>
+        <div style="margin-top:22px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+      </div>
+      <div data-vcap-key="5" style="display:none">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:clamp(10.5px,2.6vw,12px);letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">
+          <span>Sá Cavalcante</span>
+          <span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span>
+          <span>AREINHA · SÃO LUÍS</span>
+        </div>
+        <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.08;color:#F5F4F0;text-wrap:balance">São Luís Offices</h3>
+        <div style="margin-top:14px;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Salas comerciais de 28 a 541 m² · em frente ao polo jurídico</div>
+        <div style="margin-top:22px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+      </div>
+      <div data-vcap-key="6" style="display:none">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:clamp(10.5px,2.6vw,12px);letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">
+          <span>Sá Cavalcante</span>
+          <span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span>
+          <span>PONTA D'AREIA · SÃO LUÍS</span>
+        </div>
+        <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Lagoa Corporate &amp; Offices</h3>
+        <div style="margin-top:14px;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Salas e lajes de 33 a 1.008 m² · padrão corporativo Triple A</div>
+        <div style="margin-top:22px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+      </div>
+      <div data-vcap-key="7" style="display:none">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:clamp(10.5px,2.6vw,12px);letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">
+          <span>Sá Cavalcante</span>
+          <span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span>
+          <span>PENÍNSULA · SÃO LUÍS</span>
+        </div>
+        <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Reserva Península</h3>
+        <div style="margin-top:14px;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Apartamentos de 127 a 171 m² · 4 suítes com lazer de clube</div>
+        <div style="margin-top:22px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+      </div>
+      <div data-vcap-key="8" style="display:none">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:clamp(10.5px,2.6vw,12px);letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">
+          <span>Dom Corporação</span>
+          <span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span>
+          <span>PONTA D'AREIA · SÃO LUÍS</span>
+        </div>
+        <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Dom Manuel Residencial</h3>
+        <div style="margin-top:14px;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Apartamentos de 116 a 135 m² · torre única de alto padrão</div>
+        <div style="margin-top:22px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+      </div>
+      <div data-vcap-key="9" style="display:none">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:clamp(10.5px,2.6vw,12px);letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">
+          <span>Delman</span>
+          <span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span>
+          <span>PENÍNSULA · SÃO LUÍS</span>
+        </div>
+        <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Studio Design 7</h3>
+        <div style="margin-top:14px;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Studios e apartamentos de 30 a 98 m² · investimento moderno</div>
+        <div style="margin-top:22px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+      </div>
+      <div data-vcap-key="10" style="display:none">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:clamp(10.5px,2.6vw,12px);letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">
+          <span>Delman</span>
+          <span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span>
+          <span>CALHAU · SÃO LUÍS</span>
+        </div>
+        <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Landscape</h3>
+        <div style="margin-top:14px;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Apartamentos de 88 a 103 m² · sofisticação e lazer premium</div>
+        <div style="margin-top:22px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+      </div>
+      <div data-vcap-key="11" style="display:none">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:clamp(10.5px,2.6vw,12px);letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">
+          <span>Delman</span>
+          <span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span>
+          <span>PONTA D'AREIA · SÃO LUÍS</span>
+        </div>
+        <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.08;color:#F5F4F0;text-wrap:balance">The View</h3>
+        <div style="margin-top:14px;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Apartamentos de 36,05 m² a 101,06 m² · a melhor vista da Península</div>
+        <div style="margin-top:22px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+      </div>
+      <div data-vcap-key="12" style="display:none">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:clamp(10.5px,2.6vw,12px);letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">
+          <span>Delman</span>
+          <span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span>
+          <span>PENÍNSULA · SÃO LUÍS</span>
+        </div>
+        <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Quartier 22</h3>
+        <div style="margin-top:14px;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Apartamentos de 165 m² · 4 suítes com vista mar</div>
+        <div style="margin-top:22px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+      </div>
+      <div data-vcap-key="13" style="display:none">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:clamp(10.5px,2.6vw,12px);letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">
+          <span>Delman</span>
+          <span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span>
+          <span>PONTA D'AREIA · SÃO LUÍS</span>
+        </div>
+        <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Sky Residence</h3>
+        <div style="margin-top:14px;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Apartamentos de 246 m² · 1 por andar estilo resort</div>
+        <div style="margin-top:22px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+      </div>
+      <div data-vcap-key="14" style="display:none">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:clamp(10.5px,2.6vw,12px);letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">
+          <span>Delman</span>
+          <span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span>
+          <span>LITORÂNEA · SÃO LUÍS</span>
+        </div>
+        <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Wave</h3>
+        <div style="margin-top:14px;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Apartamentos de 293 m² · piscina privativa na varanda</div>
+        <div style="margin-top:22px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+      </div>
+      <div data-vcap-key="15" style="display:none">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:clamp(10.5px,2.6vw,12px);letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">
+          <span>Mota Machado</span>
+          <span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span>
+          <span>SÃO MARCOS · SÃO LUÍS</span>
+        </div>
+        <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Reserva São Marcos</h3>
+        <div style="margin-top:14px;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Apartamentos de 67 a 104 m² · até 3 suítes ao lado do mar</div>
+        <div style="margin-top:22px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+      </div>
+      <div data-vcap-key="16" style="display:none">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:clamp(10.5px,2.6vw,12px);letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">
+          <span>Mota Machado</span>
+          <span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span>
+          <span>JARDIM RENASCENÇA · SÃO LUÍS</span>
+        </div>
+        <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Entre Rios</h3>
+        <div style="margin-top:14px;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Apartamentos de 125 a 156 m² · 3 suítes com varanda gourmet</div>
+        <div style="margin-top:22px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+      </div>
+      <div data-vcap-key="17" style="display:none">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:clamp(10.5px,2.6vw,12px);letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">
+          <span>Mota Machado</span>
+          <span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span>
+          <span>JARDIM RENASCENÇA · SÃO LUÍS</span>
+        </div>
+        <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Edifício Bossa</h3>
+        <div style="margin-top:14px;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Apartamentos de 191 a 196 m² · 4 suítes e lazer de alto luxo</div>
+        <div style="margin-top:22px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+      </div>
+      <div data-vcap-key="18" style="display:none">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:clamp(10.5px,2.6vw,12px);letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">
+          <span>Mota Machado</span>
+          <span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span>
+          <span>SÃO MARCOS · SÃO LUÍS</span>
+        </div>
+        <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Al Mare</h3>
+        <div style="margin-top:14px;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Apartamentos de 215 a 235 m² · 4 suítes prontas para morar</div>
+        <div style="margin-top:22px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+      </div>
+      <div data-vcap-key="19" style="display:none">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:clamp(10.5px,2.6vw,12px);letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">
+          <span>Monteplan Engenharia</span>
+          <span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span>
+          <span>JARDIM RENASCENÇA · SÃO LUÍS</span>
+        </div>
+        <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Renaissance Conceito</h3>
+        <div style="margin-top:14px;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Apartamentos de 82 a 110 m² · até 3 suítes com design sofisticado</div>
+        <div style="margin-top:22px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+      </div>
+      <div data-vcap-key="20" style="display:none">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:clamp(10.5px,2.6vw,12px);letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">
+          <span>Hiali</span>
+          <span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span>
+          <span>JARDIM RENASCENÇA · SÃO LUÍS</span>
+        </div>
+        <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Le Noir Boutique Residence</h3>
+        <div style="margin-top:14px;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Studios e apartamentos de 33 a 62 m² · conceito Home Boutique</div>
+        <div style="margin-top:22px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+      </div>
+      <div data-vcap-key="21" style="display:none">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:clamp(10.5px,2.6vw,12px);letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">
+          <span>Hiali</span>
+          <span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span>
+          <span>PONTA D'AREIA · SÃO LUÍS</span>
+        </div>
+        <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Vento Leste Residence</h3>
+        <div style="margin-top:14px;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Apartamentos exclusivos · sofisticação a poucos passos do mar</div>
+        <div style="margin-top:22px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+      </div>
+      <div style="margin-top:28px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+        <button type="button" aria-label="Imóvel anterior" onClick="{{ vitrinePrev }}" style="width:54px;height:54px;border-radius:50%;background:transparent;border:1.5px solid rgba(245,244,240,.55);color:#F5F4F0;display:grid;place-items:center;cursor:pointer;transition:transform .15s ease,background-color .15s ease,border-color .15s ease" style-hover="transform:scale(1.08);background:rgba(196,160,92,.14);border-color:#C4A05C">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg>
+        </button>
+        <button type="button" aria-label="Próximo imóvel" onClick="{{ vitrineNext }}" style="width:54px;height:54px;border-radius:50%;background:transparent;border:1.5px solid rgba(245,244,240,.55);color:#F5F4F0;display:grid;place-items:center;cursor:pointer;transition:transform .15s ease,background-color .15s ease,border-color .15s ease" style-hover="transform:scale(1.08);background:rgba(196,160,92,.14);border-color:#C4A05C">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </button>
+        <button type="button" onClick="{{ askActive }}" data-elastic="" style="margin-left:6px;font-family:Inter,'Helvetica Neue',sans-serif;font-size:13px;font-weight:500;color:#F5F4F0;background:transparent;border:1px solid #C4A05C;border-radius:999px;padding:14px 22px;white-space:nowrap;cursor:pointer;transition:background-color .4s ease,color .4s ease" style-hover="background:#C4A05C;color:#0C1E33">Ver detalhes</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PRONTOS · REVENDA E ALUGUEL -->
+<section id="prontos" data-screen-label="03b Prontos e aluguel" style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px) clamp(96px,10vw,128px);box-sizing:border-box">
+  <div style="padding-top:clamp(56px,7vw,88px);border-top:1px solid rgba(245,244,240,.1);display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(32px,4vw,48px)">
+    <div style="max-width:640px">
+      <div data-reveal="" style="font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#E3CD9F;font-weight:500">Prontos para morar · Aluguel</div>
+      <h2 data-reveal="mask" style="margin:16px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:400;font-size:clamp(34px,4.4vw,56px);line-height:1.05;color:#F5F4F0;text-wrap:balance">Imóveis de proprietários, com a chave na mão.</h2>
+      <p data-reveal="" style="margin:18px 0 0;font-size:16px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Unidades prontas, de quem comprou e agora vende ou aluga — cada uma visitada e avaliada por mim.</p>
+    </div>
+    <div role="tablist" style="display:flex;gap:28px">
+      <button type="button" role="tab" onClick="{{ showVenda }}" style="{{ tabVendaStyle }}">À venda <span style="font-variant-numeric:tabular-nums;opacity:.6">03</span></button>
+      <button type="button" role="tab" onClick="{{ showAluguel }}" style="{{ tabAluguelStyle }}">Para alugar <span style="font-variant-numeric:tabular-nums;opacity:.6">01</span></button>
+    </div>
+  </div>
+
+  <sc-if value="{{ isVenda }}" hint-placeholder-val="{{ true }}">
+    <div style="display:flex;flex-direction:column;gap:clamp(24px,3vw,36px)">
+
+      <article style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));border:1px solid rgba(245,244,240,.1);border-radius:20px;overflow:hidden;background:#0F1C30">
+        <div style="position:relative;min-height:clamp(360px,48vw,640px);background:#08111F;overflow:hidden">
+          <sc-for list="{{ varandasPhotos }}" as="ph" hint-placeholder-count="0">
+            <div role="img" aria-label="{{ ph.alt }}" style="{{ ph.style }}"></div>
+          </sc-for>
+          <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(8,17,31,.35) 0%,rgba(8,17,31,0) 22%,rgba(8,17,31,0) 70%,rgba(8,17,31,.6) 100%)"></div>
+          <button type="button" aria-label="Foto anterior" onClick="{{ varandasPrev }}" style="position:absolute;left:14px;top:50%;margin-top:-23px;width:46px;height:46px;border-radius:50%;background:rgba(8,17,31,.55);border:1px solid rgba(245,244,240,.5);color:#F5F4F0;display:grid;place-items:center;cursor:pointer;backdrop-filter:blur(6px);transition:transform .15s ease,background-color .15s ease,border-color .15s ease" style-hover="transform:scale(1.08);background:rgba(196,160,92,.3);border-color:#C4A05C"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg></button>
+          <button type="button" aria-label="Próxima foto" onClick="{{ varandasNext }}" style="position:absolute;right:14px;top:50%;margin-top:-23px;width:46px;height:46px;border-radius:50%;background:rgba(8,17,31,.55);border:1px solid rgba(245,244,240,.5);color:#F5F4F0;display:grid;place-items:center;cursor:pointer;backdrop-filter:blur(6px);transition:transform .15s ease,background-color .15s ease,border-color .15s ease" style-hover="transform:scale(1.08);background:rgba(196,160,92,.3);border-color:#C4A05C"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg></button>
+          <div style="position:absolute;left:18px;right:18px;bottom:16px;display:flex;align-items:center;justify-content:space-between;gap:12px;pointer-events:none">
+            <span style="font-size:12px;letter-spacing:.06em;color:#F5F4F0">{{ varandasCaption }}</span>
+            <span style="font-size:12px;letter-spacing:.2em;color:rgba(245,244,240,.8);font-variant-numeric:tabular-nums">{{ varandasCount }}</span>
+          </div>
+          <span style="position:absolute;left:18px;top:18px;pointer-events:none;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#F5F4F0;background:rgba(8,17,31,.6);border:1px solid rgba(196,160,92,.6);border-radius:999px;padding:7px 12px">Revenda · reformado</span>
+        </div>
+        <div style="padding:clamp(28px,4vw,48px);display:flex;flex-direction:column">
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500"><span>Apartamento</span><span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span><span>Ponta do Farol · São Luís</span></div>
+          <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.4vw,42px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Varandas de São Marcos</h3>
+          <p style="margin:14px 0 0;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Reformado, moderno, ventilado e com vista para o mar. Totalmente projetado e automatizado, com fino acabamento.</p>
+          <div style="margin-top:24px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid rgba(245,244,240,.1);border-bottom:1px solid rgba(245,244,240,.1)">
+            <div style="padding:16px clamp(6px,2vw,12px) 16px 0;min-width:0"><div style="font-family:Didot,'Bodoni Moda',serif;font-style:italic;font-size:clamp(19px,5vw,26px);line-height:1.15;color:#F5F4F0">143 m²</div><div style="margin-top:4px;font-size:12px;color:rgba(245,244,240,.55)">área privativa</div></div>
+            <div style="padding:16px clamp(6px,2vw,12px);border-left:1px solid rgba(245,244,240,.1);min-width:0"><div style="font-family:Didot,'Bodoni Moda',serif;font-style:italic;font-size:clamp(19px,5vw,26px);line-height:1.15;color:#F5F4F0">3</div><div style="margin-top:4px;font-size:12px;color:rgba(245,244,240,.55)">suítes</div></div>
+            <div style="padding:16px 0 16px clamp(6px,2vw,12px);border-left:1px solid rgba(245,244,240,.1);min-width:0"><div style="font-family:Didot,'Bodoni Moda',serif;font-style:italic;font-size:clamp(19px,5vw,26px);line-height:1.15;color:#F5F4F0">3</div><div style="margin-top:4px;font-size:12px;color:rgba(245,244,240,.55)">vagas + depósito</div></div>
+          </div>
+          <details style="margin-top:18px">
+            <summary style="list-style:none;cursor:pointer;font-size:13px;color:#E3CD9F;letter-spacing:.04em">Ficha completa +</summary>
+            <div style="margin-top:16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:20px;font-size:14px;line-height:1.75;font-weight:300;color:#C9D1DC">
+              <div><div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,244,240,.5);margin-bottom:8px">O apartamento</div>Todo planejado<br>Piso em porcelanato<br>Fino acabamento<br>Totalmente automatizado<br>Condomínio R$ 1.300</div>
+              <div><div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,244,240,.5);margin-bottom:8px">Lazer</div>Piscinas adulto e infantil<br>Área gourmet<br>Quadras de tênis e poliesportiva<br>Brinquedoteca e salão de festas<br>Sauna e sala de massagem com hidro</div>
+            </div>
+          </details>
+          <div style="margin-top:auto;padding-top:28px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+            <div style="font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+            <a href="{{ waVarandas }}" target="_blank" rel="noopener" data-elastic="" style="font-size:13px;font-weight:500;color:#F5F4F0;border:1px solid #C4A05C;border-radius:999px;padding:14px 22px;white-space:nowrap;transition:background-color .4s ease,color .4s ease" style-hover="background:#C4A05C;color:#0C1E33">Tenho interesse</a>
+          </div>
+        </div>
+      </article>
+
+      <article style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));border:1px solid rgba(245,244,240,.1);border-radius:20px;overflow:hidden;background:#0F1C30">
+        <div style="position:relative;min-height:clamp(360px,48vw,640px);background:#08111F;overflow:hidden">
+          <sc-for list="{{ brisasPhotos }}" as="ph" hint-placeholder-count="0">
+            <div role="img" aria-label="{{ ph.alt }}" style="{{ ph.style }}"></div>
+          </sc-for>
+          <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(8,17,31,.35) 0%,rgba(8,17,31,0) 22%,rgba(8,17,31,0) 70%,rgba(8,17,31,.6) 100%)"></div>
+          <button type="button" aria-label="Foto anterior" onClick="{{ brisasPrev }}" style="position:absolute;left:14px;top:50%;margin-top:-23px;width:46px;height:46px;border-radius:50%;background:rgba(8,17,31,.55);border:1px solid rgba(245,244,240,.5);color:#F5F4F0;display:grid;place-items:center;cursor:pointer;backdrop-filter:blur(6px);transition:transform .15s ease,background-color .15s ease,border-color .15s ease" style-hover="transform:scale(1.08);background:rgba(196,160,92,.3);border-color:#C4A05C"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg></button>
+          <button type="button" aria-label="Próxima foto" onClick="{{ brisasNext }}" style="position:absolute;right:14px;top:50%;margin-top:-23px;width:46px;height:46px;border-radius:50%;background:rgba(8,17,31,.55);border:1px solid rgba(245,244,240,.5);color:#F5F4F0;display:grid;place-items:center;cursor:pointer;backdrop-filter:blur(6px);transition:transform .15s ease,background-color .15s ease,border-color .15s ease" style-hover="transform:scale(1.08);background:rgba(196,160,92,.3);border-color:#C4A05C"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg></button>
+          <div style="position:absolute;left:18px;right:18px;bottom:16px;display:flex;align-items:center;justify-content:space-between;gap:12px;pointer-events:none">
+            <span style="font-size:12px;letter-spacing:.06em;color:#F5F4F0">{{ brisasCaption }}</span>
+            <span style="font-size:12px;letter-spacing:.2em;color:rgba(245,244,240,.8);font-variant-numeric:tabular-nums">{{ brisasCount }}</span>
+          </div>
+          <span style="position:absolute;left:18px;top:18px;pointer-events:none;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#F5F4F0;background:rgba(8,17,31,.6);border:1px solid rgba(196,160,92,.6);border-radius:999px;padding:7px 12px">Revenda · nascente</span>
+        </div>
+        <div style="padding:clamp(28px,4vw,48px);display:flex;flex-direction:column">
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500"><span>Apartamento</span><span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span><span>Altos do Calhau · São Luís</span></div>
+          <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.4vw,42px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Brisas Nascente</h3>
+          <p style="margin:14px 0 0;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Andar intermediário, voltado para o nascente e com vista livre. Fácil acesso às principais avenidas da região.</p>
+          <div style="margin-top:24px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid rgba(245,244,240,.1);border-bottom:1px solid rgba(245,244,240,.1)">
+            <div style="padding:16px clamp(6px,2vw,12px) 16px 0;min-width:0"><div style="font-family:Didot,'Bodoni Moda',serif;font-style:italic;font-size:clamp(19px,5vw,26px);line-height:1.15;color:#F5F4F0">2</div><div style="margin-top:4px;font-size:12px;color:rgba(245,244,240,.55)">quartos, 1 suíte</div></div>
+            <div style="padding:16px clamp(6px,2vw,12px);border-left:1px solid rgba(245,244,240,.1);min-width:0"><div style="font-family:Didot,'Bodoni Moda',serif;font-style:italic;font-size:clamp(19px,5vw,26px);line-height:1.15;color:#F5F4F0">Nascente</div><div style="margin-top:4px;font-size:12px;color:rgba(245,244,240,.55)">vista livre</div></div>
+            <div style="padding:16px 0 16px clamp(6px,2vw,12px);border-left:1px solid rgba(245,244,240,.1);min-width:0"><div style="font-family:Didot,'Bodoni Moda',serif;font-style:italic;font-size:clamp(19px,5vw,26px);line-height:1.15;color:#F5F4F0">Inclusos</div><div style="margin-top:4px;font-size:12px;color:rgba(245,244,240,.55)">água e gás</div></div>
+          </div>
+          <details style="margin-top:18px">
+            <summary style="list-style:none;cursor:pointer;font-size:13px;color:#E3CD9F;letter-spacing:.04em">Ficha completa +</summary>
+            <div style="margin-top:16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:20px;font-size:14px;line-height:1.75;font-weight:300;color:#C9D1DC">
+              <div><div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,244,240,.5);margin-bottom:8px">O apartamento</div>2 quartos, sendo 1 suíte<br>Banheiro social<br>Cozinha com móveis projetados<br>Água e gás no condomínio</div>
+              <div><div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,244,240,.5);margin-bottom:8px">Brisas Life</div>Academia<br>Mercado, farmácia e lavanderia<br>Salão de festas e espaço gourmet<br>Açaiteria e feirinha<br>Depósito de água</div>
+            </div>
+          </details>
+          <div style="margin-top:auto;padding-top:28px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+            <div style="font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+            <a href="{{ waBrisas }}" target="_blank" rel="noopener" data-elastic="" style="font-size:13px;font-weight:500;color:#F5F4F0;border:1px solid #C4A05C;border-radius:999px;padding:14px 22px;white-space:nowrap;transition:background-color .4s ease,color .4s ease" style-hover="background:#C4A05C;color:#0C1E33">Tenho interesse</a>
+          </div>
+        </div>
+      </article>
+
+      <article style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));border:1px solid rgba(245,244,240,.1);border-radius:20px;overflow:hidden;background:#0F1C30">
+        <div style="position:relative;min-height:clamp(360px,48vw,640px);background:#08111F;overflow:hidden">
+          <sc-for list="{{ arcoPhotos }}" as="ph" hint-placeholder-count="0">
+            <div role="img" aria-label="{{ ph.alt }}" style="{{ ph.style }}"></div>
+          </sc-for>
+          <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(8,17,31,.35) 0%,rgba(8,17,31,0) 22%,rgba(8,17,31,0) 70%,rgba(8,17,31,.6) 100%)"></div>
+          <button type="button" aria-label="Foto anterior" onClick="{{ arcoPrev }}" style="position:absolute;left:14px;top:50%;margin-top:-23px;width:46px;height:46px;border-radius:50%;background:rgba(8,17,31,.55);border:1px solid rgba(245,244,240,.5);color:#F5F4F0;display:grid;place-items:center;cursor:pointer;backdrop-filter:blur(6px);transition:transform .15s ease,background-color .15s ease,border-color .15s ease" style-hover="transform:scale(1.08);background:rgba(196,160,92,.3);border-color:#C4A05C"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg></button>
+          <button type="button" aria-label="Próxima foto" onClick="{{ arcoNext }}" style="position:absolute;right:14px;top:50%;margin-top:-23px;width:46px;height:46px;border-radius:50%;background:rgba(8,17,31,.55);border:1px solid rgba(245,244,240,.5);color:#F5F4F0;display:grid;place-items:center;cursor:pointer;backdrop-filter:blur(6px);transition:transform .15s ease,background-color .15s ease,border-color .15s ease" style-hover="transform:scale(1.08);background:rgba(196,160,92,.3);border-color:#C4A05C"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg></button>
+          <div style="position:absolute;left:18px;right:18px;bottom:16px;display:flex;align-items:center;justify-content:space-between;gap:12px;pointer-events:none">
+            <span style="font-size:12px;letter-spacing:.06em;color:#F5F4F0">{{ arcoCaption }}</span>
+            <span style="font-size:12px;letter-spacing:.2em;color:rgba(245,244,240,.8);font-variant-numeric:tabular-nums">{{ arcoCount }}</span>
+          </div>
+          <span style="position:absolute;left:18px;top:18px;pointer-events:none;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#F5F4F0;background:rgba(8,17,31,.6);border:1px solid rgba(196,160,92,.6);border-radius:999px;padding:7px 12px">Porteira fechada</span>
+        </div>
+        <div style="padding:clamp(28px,4vw,48px);display:flex;flex-direction:column">
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500"><span>Apartamento</span><span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span><span>Vinhais · São Luís</span></div>
+          <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.4vw,42px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Arco Verde Vinhais</h3>
+          <p style="margin:14px 0 0;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">73 m² no 3º andar, pronto para morar e vendido porteira fechada — móveis e itens de decoração inclusos. Entre e more, sem se preocupar com nada.</p>
+          <div style="margin-top:24px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid rgba(245,244,240,.1);border-bottom:1px solid rgba(245,244,240,.1)">
+            <div style="padding:16px clamp(6px,2vw,12px) 16px 0;min-width:0"><div style="font-family:Didot,'Bodoni Moda',serif;font-style:italic;font-size:clamp(19px,5vw,26px);line-height:1.15;color:#F5F4F0">73 m²</div><div style="margin-top:4px;font-size:12px;color:rgba(245,244,240,.55)">3º andar</div></div>
+            <div style="padding:16px clamp(6px,2vw,12px);border-left:1px solid rgba(245,244,240,.1);min-width:0"><div style="font-family:Didot,'Bodoni Moda',serif;font-style:italic;font-size:clamp(19px,5vw,26px);line-height:1.15;color:#F5F4F0">2 + 1</div><div style="margin-top:4px;font-size:12px;color:rgba(245,244,240,.55)">quartos, suíte e escritório</div></div>
+            <div style="padding:16px 0 16px clamp(6px,2vw,12px);border-left:1px solid rgba(245,244,240,.1);min-width:0"><div style="font-family:Didot,'Bodoni Moda',serif;font-style:italic;font-size:clamp(19px,5vw,26px);line-height:1.15;color:#F5F4F0">Mobiliado</div><div style="margin-top:4px;font-size:12px;color:rgba(245,244,240,.55)">porteira fechada</div></div>
+          </div>
+          <details style="margin-top:18px">
+            <summary style="list-style:none;cursor:pointer;font-size:13px;color:#E3CD9F;letter-spacing:.04em">Ficha completa +</summary>
+            <div style="margin-top:16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:20px;font-size:14px;line-height:1.75;font-weight:300;color:#C9D1DC">
+              <div><div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,244,240,.5);margin-bottom:8px">O apartamento</div>1 suíte e 1 quarto<br>Escritório<br>Banheiro social<br>Sala climatizada e varanda<br>Cozinha e lavanderia<br>1 vaga coberta (até 2 carros)</div>
+              <div><div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,244,240,.5);margin-bottom:8px">Condomínio</div>Piscina adulto e infantil<br>Salão de festas<br>Campo de futebol<br>Portaria 24 horas</div>
+            </div>
+          </details>
+          <div style="margin-top:auto;padding-top:28px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+            <div style="font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+            <a href="{{ waArco }}" target="_blank" rel="noopener" data-elastic="" style="font-size:13px;font-weight:500;color:#F5F4F0;border:1px solid #C4A05C;border-radius:999px;padding:14px 22px;white-space:nowrap;transition:background-color .4s ease,color .4s ease" style-hover="background:#C4A05C;color:#0C1E33">Tenho interesse</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ isAluguel }}" hint-placeholder-val="{{ false }}">
+    <div style="display:flex;flex-direction:column;gap:clamp(24px,3vw,36px)">
+      <article style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));border:1px solid rgba(245,244,240,.1);border-radius:20px;overflow:hidden;background:#0F1C30">
+        <div style="position:relative;min-height:clamp(360px,48vw,640px);background:#08111F;overflow:hidden">
+          <sc-for list="{{ patioPhotos }}" as="ph" hint-placeholder-count="0">
+            <div role="img" aria-label="{{ ph.alt }}" style="{{ ph.style }}"></div>
+          </sc-for>
+          <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(8,17,31,.35) 0%,rgba(8,17,31,0) 22%,rgba(8,17,31,0) 70%,rgba(8,17,31,.6) 100%)"></div>
+          <button type="button" aria-label="Foto anterior" onClick="{{ patioPrev }}" style="position:absolute;left:14px;top:50%;margin-top:-23px;width:46px;height:46px;border-radius:50%;background:rgba(8,17,31,.55);border:1px solid rgba(245,244,240,.5);color:#F5F4F0;display:grid;place-items:center;cursor:pointer;backdrop-filter:blur(6px);transition:transform .15s ease,background-color .15s ease,border-color .15s ease" style-hover="transform:scale(1.08);background:rgba(196,160,92,.3);border-color:#C4A05C"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg></button>
+          <button type="button" aria-label="Próxima foto" onClick="{{ patioNext }}" style="position:absolute;right:14px;top:50%;margin-top:-23px;width:46px;height:46px;border-radius:50%;background:rgba(8,17,31,.55);border:1px solid rgba(245,244,240,.5);color:#F5F4F0;display:grid;place-items:center;cursor:pointer;backdrop-filter:blur(6px);transition:transform .15s ease,background-color .15s ease,border-color .15s ease" style-hover="transform:scale(1.08);background:rgba(196,160,92,.3);border-color:#C4A05C"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg></button>
+          <div style="position:absolute;left:18px;right:18px;bottom:16px;display:flex;align-items:center;justify-content:space-between;gap:12px;pointer-events:none">
+            <span style="font-size:12px;letter-spacing:.06em;color:#F5F4F0">{{ patioCaption }}</span>
+            <span style="font-size:12px;letter-spacing:.2em;color:rgba(245,244,240,.8);font-variant-numeric:tabular-nums">{{ patioCount }}</span>
+          </div>
+          <span style="position:absolute;left:18px;top:18px;pointer-events:none;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#F5F4F0;background:rgba(8,17,31,.6);border:1px solid rgba(196,160,92,.6);border-radius:999px;padding:7px 12px">Aluguel · comercial</span>
+        </div>
+        <div style="padding:clamp(28px,4vw,48px);display:flex;flex-direction:column">
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500"><span>Sala comercial</span><span style="flex:0 0 36px;height:1px;background:rgba(196,160,92,.5)"></span><span>São Luís</span></div>
+          <h3 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3.4vw,42px);line-height:1.08;color:#F5F4F0;text-wrap:balance">Sala Pátio Jardins</h3>
+          <p style="margin:14px 0 0;font-size:15px;line-height:1.7;font-weight:300;color:#C9D1DC;text-wrap:pretty">Sala pronta para uso, com hall de entrada e duas salas, ar-condicionado e móveis projetados.</p>
+          <div style="margin-top:24px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid rgba(245,244,240,.1);border-bottom:1px solid rgba(245,244,240,.1)">
+            <div style="padding:16px clamp(6px,2vw,12px) 16px 0;min-width:0"><div style="font-family:Didot,'Bodoni Moda',serif;font-style:italic;font-size:clamp(19px,5vw,26px);line-height:1.15;color:#F5F4F0">38 m²</div><div style="margin-top:4px;font-size:12px;color:rgba(245,244,240,.55)">área</div></div>
+            <div style="padding:16px clamp(6px,2vw,12px);border-left:1px solid rgba(245,244,240,.1);min-width:0"><div style="font-family:Didot,'Bodoni Moda',serif;font-style:italic;font-size:clamp(19px,5vw,26px);line-height:1.15;color:#F5F4F0">2 salas</div><div style="margin-top:4px;font-size:12px;color:rgba(245,244,240,.55)">+ hall de entrada</div></div>
+            <div style="padding:16px 0 16px clamp(6px,2vw,12px);border-left:1px solid rgba(245,244,240,.1);min-width:0"><div style="font-family:Didot,'Bodoni Moda',serif;font-style:italic;font-size:clamp(19px,5vw,26px);line-height:1.15;color:#F5F4F0">Projetada</div><div style="margin-top:4px;font-size:12px;color:rgba(245,244,240,.55)">com ar-condicionado</div></div>
+          </div>
+          <div style="margin-top:auto;padding-top:28px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+            <div style="font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:28px;color:#F5F4F0">Sob Consulta</div>
+            <a href="{{ waPatio }}" target="_blank" rel="noopener" data-elastic="" style="font-size:13px;font-weight:500;color:#F5F4F0;border:1px solid #C4A05C;border-radius:999px;padding:14px 22px;white-space:nowrap;transition:background-color .4s ease,color .4s ease" style-hover="background:#C4A05C;color:#0C1E33">Tenho interesse</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </sc-if>
+</section>
+
+<!-- NÚMEROS -->
+<section id="numeros" data-screen-label="04 Números" style="position:relative;z-index:2;background:radial-gradient(70% 80% at 0% 0%,rgba(196,160,92,.08),rgba(196,160,92,0) 60%),#0B1628">
+  <div style="max-width:1120px;margin:0 auto;padding:clamp(72px,9vw,112px) clamp(20px,4vw,40px);box-sizing:border-box">
+    <div style="max-width:680px">
+      <div data-reveal="" style="font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#E3CD9F;font-weight:500">O mercado em números</div>
+      <h2 data-reveal="mask" style="margin:16px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:400;font-size:clamp(34px,4.4vw,56px);line-height:1.05;color:#F5F4F0;text-wrap:balance">Decisões guiadas por dados, não por impulso.</h2>
+      <p data-reveal="" style="margin:22px 0 0;font-size:16px;line-height:1.8;font-weight:300;color:#C9D1DC;text-wrap:pretty">Acompanho de perto a valorização dos bairros nobres de São Luís para mostrar onde o seu patrimônio tende a render mais.</p>
+    </div>
+
+    <div data-reveal="count" style="margin-top:clamp(44px,5vw,64px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:0;border:1px solid rgba(196,160,92,.22);border-radius:16px;overflow:hidden">
+      <sc-for list="{{ stats }}" as="st" hint-placeholder-count="4">
+        <div data-glow="" style="position:relative;background:#0B1628;box-shadow:inset -1px -1px 0 rgba(196,160,92,.22);padding:clamp(26px,3vw,34px)">
+          <div data-glow-layer="" style="position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .45s ease;background:radial-gradient(240px circle at var(--gx,50%) var(--gy,50%),rgba(196,160,92,.18),rgba(196,160,92,0) 70%)"></div>
+          <div style="display:flex;align-items:baseline;gap:2px;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;color:#E3CD9F">
+            <span style="font-size:14px;line-height:1">{{ st.prefix }}</span>
+            <span data-count="{{ st.value }}" style="font-size:clamp(40px,5vw,60px);line-height:1;font-variant-numeric:tabular-nums">0</span>
+            <span style="font-size:22px;line-height:1">{{ st.suffix }}</span>
+          </div>
+          <div style="margin-top:14px;font-size:14px;line-height:1.6;color:#C9D1DC">{{ st.label }}</div>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="margin-top:clamp(44px,5vw,64px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(32px,4vw,56px);align-items:start">
+      <div data-reveal="bars">
+        <div style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">Valorização em 12 meses</div>
+        <div style="margin-top:26px;display:flex;flex-direction:column;gap:20px">
+          <sc-for list="{{ bars }}" as="b" hint-placeholder-count="5">
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:14px;color:#F5F4F0">
+                <span>{{ b.name }}</span>
+                <span style="font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:20px;color:#E3CD9F;font-variant-numeric:tabular-nums">{{ b.label }}</span>
+              </div>
+              <div style="margin-top:9px;height:6px;border-radius:3px;background:rgba(245,244,240,.1);overflow:hidden">
+                <div data-bar="{{ b.pct }}" style="width:0;height:100%;border-radius:3px;background:linear-gradient(90deg,#8F6B31,#E3CD9F);transition:width 1.4s cubic-bezier(.16,1,.3,1)"></div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+        <div style="margin-top:22px;font-size:12.5px;line-height:1.6;color:#AEB8C6">Valorização acumulada nos bairros nobres de São Luís · Fonte: FipeZAP e estudos de mercado local.</div>
+      </div>
+
+      <div data-reveal="bars">
+        <div style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#E3CD9F;font-weight:500">Perfil da carteira</div>
+        <div style="margin-top:26px;display:flex;flex-direction:column;gap:20px">
+          <sc-for list="{{ mix }}" as="m2" hint-placeholder-count="4">
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:14px;color:#F5F4F0">
+                <span>{{ m2.name }}</span>
+                <span style="font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:20px;color:#DDB8A6;font-variant-numeric:tabular-nums">{{ m2.label }}</span>
+              </div>
+              <div style="margin-top:9px;height:6px;border-radius:3px;background:rgba(245,244,240,.1);overflow:hidden">
+                <div data-bar="{{ m2.pct }}" style="width:0;height:100%;border-radius:3px;background:linear-gradient(90deg,#8E5F4E,#DDB8A6);transition:width 1.4s cubic-bezier(.16,1,.3,1)"></div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANTES E DEPOIS · máscara que revela -->
+<section id="transformacao" data-screen-label="04b Antes e depois" style="position:relative;z-index:2;background:#0B1628">
+  <div data-mask="" style="position:relative;height:280svh">
+    <div style="position:sticky;top:0;height:100svh;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(18px,2.4vw,30px);padding:clamp(24px,4vw,48px) clamp(20px,4vw,40px);box-sizing:border-box">
+      <div style="text-align:center;max-width:620px">
+        <div style="font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#E3CD9F;font-weight:500">Do anúncio ao lar</div>
+        <h2 style="margin:14px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:400;font-size:clamp(28px,3.6vw,46px);line-height:1.08;color:#F5F4F0;text-wrap:balance">O mesmo endereço, visto por dentro.</h2>
+      </div>
+
+      <div style="position:relative;width:min(1080px,100%);flex:1 1 auto;max-height:min(62vh,620px);border-radius:16px;overflow:hidden;background:#101E33">
+        <div style="position:absolute;inset:0">
+          <image-slot id="transform-depois" src="fotos/transform-depois.webp" shape="rect" placeholder="Foto do interior pronto (depois)"></image-slot>
+          <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,rgba(8,17,31,.72),rgba(8,17,31,0) 55%)"></div>
+        </div>
+        <div data-mask-top="" style="position:absolute;inset:0;clip-path:circle(150% at 50% 50%)">
+          <image-slot id="transform-antes" src="fotos/transform-antes.webp" shape="rect" placeholder="Foto da fachada ou da planta (antes)"></image-slot>
+          <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,rgba(8,17,31,.78),rgba(8,17,31,.18) 55%)"></div>
+        </div>
+        <div data-mask-ring="" style="position:absolute;inset:0;pointer-events:none;border-radius:50%;box-shadow:0 0 0 1px rgba(227,205,159,.0) inset"></div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:clamp(16px,3vw,34px);font-size:13px;letter-spacing:.14em;text-transform:uppercase">
+        <span data-mask-label="antes" style="color:#F5F4F0;transition:color .4s ease,opacity .4s ease">Fachada</span>
+        <span style="width:clamp(40px,8vw,90px);height:1px;background:rgba(245,244,240,.25)"></span>
+        <span data-mask-label="depois" style="color:rgba(245,244,240,.35);transition:color .4s ease,opacity .4s ease">Interior</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO TRABALHAMOS -->
+<section id="processo" data-screen-label="05 Processo" style="position:relative;z-index:2;background:#0B1628">
+  <div style="max-width:900px;margin:0 auto;padding:clamp(56px,7vw,88px) clamp(20px,4vw,40px) clamp(88px,10vw,120px);box-sizing:border-box">
+    <div data-reveal="" style="font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#E3CD9F;font-weight:500">Como trabalhamos</div>
+    <h2 data-reveal="mask" style="margin:16px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:400;font-size:clamp(32px,4vw,50px);line-height:1.06;color:#F5F4F0;text-wrap:balance">Do primeiro contato à entrega das chaves.</h2>
+
+    <div data-rail="" style="position:relative;margin-top:clamp(40px,5vw,60px);padding-left:40px">
+      <div data-rail-track="" style="position:absolute;left:15px;top:8px;bottom:8px;width:2px;background:rgba(245,244,240,.12)">
+        <div data-rail-fill="" style="position:absolute;left:0;top:0;width:100%;height:0;background:linear-gradient(180deg,#C4A05C,#E3CD9F)"></div>
+      </div>
+      <sc-for list="{{ steps }}" as="sp" hint-placeholder-count="5">
+        <div data-step="" style="position:relative;padding-bottom:clamp(30px,4vw,42px)">
+          <span data-dot="" style="position:absolute;left:-32px;top:6px;width:14px;height:14px;border-radius:50%;background:#0B1628;border:2px solid rgba(245,244,240,.25);transition:background .4s ease,border-color .4s ease,transform .4s ease"></span>
+          <div style="font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#8DA0B8;transition:color .4s ease">{{ sp.num }}</div>
+          <h3 data-step-title="" style="margin:8px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(23px,2.4vw,29px);line-height:1.15;color:rgba(245,244,240,.45);transition:color .4s ease">{{ sp.title }}</h3>
+          <p style="margin:10px 0 0;font-size:15.5px;line-height:1.75;font-weight:300;color:#C9D1DC;max-width:560px;text-wrap:pretty">{{ sp.body }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUE CONTAR COMIGO -->
+<section id="porque" data-screen-label="04 Por que contar comigo" style="position:relative;z-index:2;background:radial-gradient(70% 90% at 100% 0%,rgba(196,160,92,.10),rgba(196,160,92,0) 60%),#1C1611;border-radius:40px 40px 0 0">
+  <div style="max-width:1120px;margin:0 auto;padding:clamp(72px,9vw,112px) clamp(20px,4vw,40px) clamp(112px,12vw,152px);box-sizing:border-box">
+    <div style="max-width:720px">
+      <div data-reveal="" style="font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#E3CD9F;font-weight:500">Curadoria &amp; estratégia</div>
+      <h2 data-reveal="mask" style="margin:16px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:400;font-size:clamp(34px,4.6vw,58px);line-height:1.05;color:#F5F4F0;text-wrap:balance">Por que contar comigo?</h2>
+      <p data-reveal="" style="margin:24px 0 0;font-size:clamp(16px,1.6vw,18px);line-height:1.8;font-weight:300;color:#E8E2D8;text-wrap:pretty">No mercado de alto padrão, encontrar um imóvel é apenas o começo. É preciso reconhecer boas oportunidades, entender o momento certo e fazer escolhas que estejam alinhadas ao seu estilo de vida e ao seu patrimônio.</p>
+    </div>
+
+    <div style="margin-top:clamp(48px,6vw,72px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:0;border:1px solid rgba(196,160,92,.22);border-radius:16px;overflow:hidden">
+      <sc-for list="{{ reasons }}" as="r" hint-placeholder-count="4">
+        <div data-reveal="blur" data-glow="" style="position:relative;background:#1C1611;box-shadow:inset -1px -1px 0 rgba(196,160,92,.22);padding:clamp(28px,3.4vw,40px);display:flex;flex-direction:column;transition:background .4s ease" style-hover="background:#241C15">
+          <div data-glow-layer="" style="position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .45s ease;background:radial-gradient(260px circle at var(--gx,50%) var(--gy,50%),rgba(196,160,92,.20),rgba(196,160,92,0) 70%)"></div>
+          <div style="font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:15px;color:#C4A05C;letter-spacing:.14em">{{ r.num }}</div>
+          <h3 style="margin:18px 0 0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:500;font-size:clamp(24px,2.4vw,30px);line-height:1.15;color:#F5F4F0;text-wrap:balance">{{ r.title }}</h3>
+          <p style="margin:14px 0 0;font-size:15.5px;line-height:1.75;font-weight:300;color:#D8D2C7;text-wrap:pretty">{{ r.body }}</p>
+        </div>
+      </sc-for>
+    </div>
+
+    <p data-reveal="words" style="margin:clamp(44px,5vw,64px) auto 0;max-width:760px;text-align:center;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:clamp(24px,3vw,36px);line-height:1.3;font-style:italic;color:#E3CD9F;text-wrap:balance">
+      <sc-for list="{{ closingWords }}" as="w" hint-placeholder-count="24">
+        <span data-word="" style="display:inline-block;opacity:0;translate:0 18px;transition:opacity .6s cubic-bezier(.16,1,.3,1),translate .6s cubic-bezier(.16,1,.3,1)">{{ w }}</span>
+      </sc-for>
+    </p>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<footer id="contato" data-screen-label="05 Contato" style="position:relative;z-index:3;margin-top:-40px;background:#08111F;color:#F5F4F0;border-radius:40px 40px 0 0;overflow:hidden">
+  <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,rgba(196,160,92,.07) 0%,rgba(196,160,92,0) 55%)"></div>
+  <div style="position:relative;max-width:1000px;margin:0 auto;padding:clamp(88px,11vw,140px) clamp(20px,4vw,40px) 56px;box-sizing:border-box;text-align:center">
+    <div data-reveal="" style="width:48px;height:1px;background:#C4A05C;margin:0 auto 32px"></div>
+    <h2 data-reveal="mask" style="margin:0;font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-weight:400;font-size:clamp(38px,6vw,76px);line-height:1.02;letter-spacing:.02em;text-transform:uppercase;color:#F5F4F0;text-wrap:balance">Pronto para encontrar o seu <em style="color:#E3CD9F">próximo lar?</em></h2>
+    <p data-reveal="" style="margin:24px auto 0;max-width:520px;font-size:17px;line-height:1.7;font-weight:300;color:#C9D1DC">Conte-me sobre a sua família. Eu cuido de encontrar o endereço certo para ela.</p>
+    <div data-reveal="" style="margin-top:44px;display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
+      <a href="{{ waLink }}" target="_blank" rel="noopener" data-elastic="" style="display:inline-flex;align-items:center;gap:10px;white-space:nowrap;background:#C4A05C;color:#0C1E33;font-weight:600;font-size:15px;padding:18px 34px;border-radius:999px;transition:all .4s ease" style-hover="background:#D6B676;color:#0C1E33;transform:translateY(-2px)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>
+        Falar no WhatsApp
+      </a>
+      <a href="{{ mailLink }}" style="display:inline-flex;align-items:center;gap:10px;white-space:nowrap;color:#F5F4F0;font-size:15px;padding:18px 30px;border-radius:999px;border:1px solid rgba(245,244,240,.55);transition:all .4s ease" style-hover="border-color:#C4A05C;color:#E3CD9F">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg>
+        E-mail
+      </a>
+      <a href="{{ igLink }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;white-space:nowrap;color:#F5F4F0;font-size:15px;padding:18px 30px;border-radius:999px;border:1px solid rgba(245,244,240,.55);transition:all .4s ease" style-hover="border-color:#C4A05C;color:#E3CD9F">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        Instagram
+      </a>
+    </div>
+    <div style="margin-top:96px;padding-top:28px;border-top:1px solid rgba(245,244,240,.16);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:13px;color:#AEB8C6">
+      <div style="font-family:Didot,'Bodoni Moda','Didot LT STD',serif;font-style:italic;font-size:22px;color:#F5F4F0">{{ brokerName }}</div>
+      <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap"><span>{{ creciLabel }}</span><a href="{{ mailLink }}" style="color:#AEB8C6;border-bottom:1px solid rgba(196,160,92,.5);padding-bottom:2px" style-hover="color:#E3CD9F">{{ emailLabel }}</a></div>
+      <div>© 2026 · Todos os direitos reservados</div>
+    </div>
+  </div>
+</footer>
+
+<a href="{{ waLink }}" target="_blank" rel="noopener" aria-label="WhatsApp" data-intro="wa" style="position:fixed;right:18px;bottom:22px;z-index:150;width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.35);transition:transform .4s ease" style-hover="transform:scale(1.06)">
+  <span data-wa-pulse="" style="position:absolute;inset:0;border-radius:50%;border:2px solid rgba(37,211,102,.55);pointer-events:none"></span>
+  <svg width="30" height="30" viewBox="0 0 32 32" fill="#FFFFFF"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3.1 29l6.4-1.8c2 1.1 4.2 1.6 6.5 1.6 7.2 0 13-5.7 13-12.8S23.2 3 16 3Zm0 23.5c-2 0-4-.5-5.7-1.6l-.4-.2-3.8 1.1 1-3.7-.3-.4a10.4 10.4 0 0 1-1.6-5.6c0-5.8 4.8-10.5 10.8-10.5s10.8 4.7 10.8 10.5S22 26.5 16 26.5Zm5.9-7.8c-.3-.2-1.9-1-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.8 5 2.9 1.1 3.4.9 4 .8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5 0-.2-.3-.3-.6-.4Z"></path></svg>
+</a>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;brokerName&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Diélia Cutrim&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contato&quot;},&quot;whatsapp&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;5598996191542&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contato&quot;},&quot;instagram&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;dieliacutrim_imob&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contato&quot;},&quot;email&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;dieliacutrim.imob@gmail.com&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contato&quot;},&quot;creci&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;CRECI 7653&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contato&quot;},&quot;priceOnRequest&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Vitrine&quot;}}">
+class Component extends DCLogic {
+  state = { vw: typeof window !== 'undefined' ? window.innerWidth : 1200, menuOpen: false, vi: 0, builder: 'Todas', stock: 'venda' };
+
+  componentDidMount() {
+    const root = document;
+    this.reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this.paused = false;
+
+    // Gold dust: two 1px elements whose whole field is a box-shadow list
+    const dust = (n, blur, a0, a1) => Array.from({ length: n }, () =>
+      `${(Math.random() * 100).toFixed(2)}vw ${(Math.random() * 100).toFixed(2)}vh ${blur}px 0 rgba(240,225,190,${(a0 + Math.random() * (a1 - a0)).toFixed(2)})`).join(',');
+    const sa = root.querySelector('[data-stars="a"]'), sb = root.querySelector('[data-stars="b"]');
+    if (sa) { sa.style.background = 'rgba(240,225,190,.2)'; sa.style.boxShadow = dust(130, 0, .05, .28); }
+    if (sb) { sb.style.background = 'rgba(240,225,190,.3)'; sb.style.boxShadow = dust(16, 1.2, .3, .6); }
+
+    this.onResize = () => { this.setState({ vw: window.innerWidth, menuOpen: window.innerWidth > 860 ? false : this.state.menuOpen }); this.fitRing(); this.placeVitrine(); };
+    window.addEventListener('resize', this.onResize);
+    this.onKey = (e) => { if (e.key === 'Escape') this.setState({ menuOpen: false }); };
+    window.addEventListener('keydown', this.onKey);
+    this.fitRing();
+
+    // 12 · luz que segue o mouse: o JS só escreve a posição; o gradiente é CSS
+    this.onMove = (e) => {
+      const card = e.target.closest && e.target.closest('[data-glow]');
+      if (this.glowCard && this.glowCard !== card) {
+        const old = this.glowCard.querySelector('[data-glow-layer]');
+        if (old) old.style.opacity = '0';
+      }
+      this.glowCard = card;
+      if (!card) return;
+      const layer = card.querySelector('[data-glow-layer]');
+      if (!layer) return;
+      const r = card.getBoundingClientRect();
+      layer.style.setProperty('--gx', (e.clientX - r.left) + 'px');
+      layer.style.setProperty('--gy', (e.clientY - r.top) + 'px');
+      layer.style.opacity = '1';
+    };
+    if (window.matchMedia('(hover:hover)').matches) document.addEventListener('mousemove', this.onMove);
+    this.onTouch = (e) => {
+      const t = e.touches && e.touches[0];
+      if (!t) return;
+      clearTimeout(this.glowT);
+      const el = document.elementFromPoint(t.clientX, t.clientY);
+      this.onMove({ target: el || e.target, clientX: t.clientX, clientY: t.clientY });
+    };
+    this.onTouchEnd = () => {
+      clearTimeout(this.glowT);
+      this.glowT = setTimeout(() => {
+        const l = this.glowCard && this.glowCard.querySelector('[data-glow-layer]');
+        if (l) l.style.opacity = '0';
+        this.glowCard = null;
+      }, 700);
+    };
+    document.addEventListener('touchstart', this.onTouch, { passive: true });
+    document.addEventListener('touchmove', this.onTouch, { passive: true });
+    document.addEventListener('touchend', this.onTouchEnd, { passive: true });
+    document.addEventListener('touchcancel', this.onTouchEnd, { passive: true });
+
+    // 14 · botão elástico: mola com velocidade e amortecimento
+    this.springs = [];
+    document.querySelectorAll('[data-elastic]').forEach((el) => {
+      const sp = { el, s: 1, v: 0, t: 1 };
+      el.style.willChange = 'transform';
+      el.addEventListener('mouseenter', () => { sp.t = 1.045; });
+      el.addEventListener('mouseleave', () => { sp.t = 1; });
+      el.addEventListener('mousedown', () => { sp.t = .96; });
+      el.addEventListener('mouseup', () => { sp.t = 1.045; });
+      this.springs.push(sp);
+    });
+
+    if (this.reduce) document.querySelectorAll('[data-word]').forEach((w) => { w.style.opacity = '1'; w.style.translate = '0 0'; });
+
+    this.runIntro();
+    this.setupReveal();
+    this.setupMarquee();
+
+    // One rAF loop: ring rotation + scroll-linked effects
+    this.phase = -2; this.last = performance.now();
+    this.onVis = () => { this.last = performance.now(); };
+    document.addEventListener('visibilitychange', this.onVis);
+    this.lastY = -1;
+    const tick = (t) => {
+      const dt = Math.min((t - this.last) / 1000, .1); this.last = t;
+      if (!this.reduce && !this.paused) this.phase -= 4.2 * dt;
+      this.placeCards();
+      this.scrollFx();
+      this.drawRail();
+      this.drawMask();
+      this.setupVitrine();
+      if (!this.reduce) this.springs.forEach((sp) => {
+        sp.v = (sp.v + (sp.t - sp.s) * .22) * .72;
+        sp.s += sp.v;
+        sp.el.style.scale = sp.s.toFixed(4);
+      });
+      this.raf = requestAnimationFrame(tick);
+    };
+    this.raf = requestAnimationFrame(tick);
+  }
+
+  componentWillUnmount() {
+    cancelAnimationFrame(this.raf);
+    window.removeEventListener('resize', this.onResize);
+    window.removeEventListener('keydown', this.onKey);
+    document.removeEventListener('mousemove', this.onMove);
+    document.removeEventListener('touchstart', this.onTouch);
+    document.removeEventListener('touchmove', this.onTouch);
+    document.removeEventListener('touchend', this.onTouchEnd);
+    document.removeEventListener('touchcancel', this.onTouchEnd);
+    clearTimeout(this.glowT);
+    document.removeEventListener('visibilitychange', this.onVis);
+    this.io && this.io.disconnect();
+  }
+
+  fitRing() {
+    // The ring keeps its full 1172px 3D geometry; only the wrapper scales on narrow screens
+    const st = document.querySelector('[data-ring-stage]'), sc = document.querySelector('[data-ring-scale]');
+    if (!st || !sc) return;
+    const s = Math.max(.62, Math.min(1, window.innerWidth / 1100));
+    sc.style.transform = `scale(${s})`;
+    st.style.height = Math.round(560 * s) + 'px';
+    st.style.marginTop = Math.round(40 - 200 * s) + 'px';
+  }
+
+  placeCards() {
+    // Cylinder R=891 with the camera at its centre: cards stay tangent and face the viewer
+    const cards = document.querySelectorAll('[data-card]');
+    const n = cards.length; if (!n) return;
+    const step = 360 / n, R = 891;
+    cards.forEach((el, i) => {
+      const a = ((i * step + this.phase) % 360 + 540) % 360 - 180;
+      if (Math.abs(a) > 44) { if (el.style.visibility !== 'hidden') el.style.visibility = 'hidden'; return; }
+      el.style.visibility = 'visible';
+      const r = a * Math.PI / 180, c = Math.cos(r);
+      el.style.transform = `translate3d(${(R * Math.sin(r)).toFixed(2)}px,0,${(R * (1 - c)).toFixed(2)}px) rotateY(${(-a).toFixed(3)}deg)`;
+      el.style.filter = `brightness(${(0.84 + 0.5 * (1 / c - 1)).toFixed(3)})`;
+    });
+  }
+
+  scrollFx() {
+    const y = window.scrollY;
+    if (y === this.lastY) return;
+    this.lastY = y;
+    const vh = window.innerHeight;
+    const doc = document.documentElement;
+    const p = document.querySelector('[data-progress]');
+    if (p) p.style.transform = `scaleX(${Math.min(1, y / Math.max(1, doc.scrollHeight - vh))})`;
+    this.drawRail();
+    if (this.reduce) return;
+    const hf = document.querySelector('[data-hero-fade]');
+    if (hf) { const k = Math.min(1, y / (vh * .75)); hf.style.opacity = String(1 - k * .9); hf.style.translate = `0 ${(y * .22).toFixed(1)}px`; }
+    document.querySelectorAll('[data-parallax]').forEach((el) => {
+      const sp = parseFloat(el.dataset.parallax) || .08;
+      const r = el.parentElement.getBoundingClientRect();
+      if (r.bottom < -200 || r.top > vh + 200) return;
+      el.style.translate = `0 ${((r.top + r.height / 2 - vh / 2) * -sp).toFixed(1)}px`;
+    });
+  }
+
+  runIntro() {
+    if (this.reduce || !Element.prototype.animate) return;
+    const EXPO = 'cubic-bezier(.16,1,.3,1)', SOFT = 'cubic-bezier(.22,.61,.36,1)';
+    const D = window.innerWidth <= 700 ? .66 : 1;
+    const play = (sel, from, dur, delay, ease) => {
+      const el = document.querySelector(`[data-intro="${sel}"]`); if (!el) return;
+      const to = { opacity: 1 };
+      if (from.translate) to.translate = '0 0';
+      if (from.scale) to.scale = '1';
+      if (from.clipPath) to.clipPath = 'inset(-30% -5% -30% -5%)';
+      el.animate([from, to], { duration: dur, delay, easing: ease, fill: 'backwards' });
+    };
+    const Y = (px) => `0 ${px * D}px`;
+    play('nav', { opacity: 0, translate: Y(-9) }, 620, 60, EXPO);
+    play('badge', { opacity: 0, translate: Y(11), scale: .985 }, 560, 270, EXPO);
+    play('h1a', { opacity: 0, translate: Y(18), clipPath: 'inset(100% -5% -30% -5%)' }, 1000, 380, EXPO);
+    play('h1b', { opacity: 0, translate: Y(18), clipPath: 'inset(100% -5% -30% -5%)' }, 1000, 500, EXPO);
+    play('sub', { opacity: 0, translate: Y(10) }, 700, 720, EXPO);
+    play('cta', { opacity: 0, translate: Y(13), scale: .985 }, 700, 840, EXPO);
+    play('ring', { opacity: 0, translate: Y(26), scale: .99 }, 1100, 760, EXPO);
+    play('wa', { opacity: 0, scale: .88 }, 500, 1300, SOFT);
+    const pulse = document.querySelector('[data-wa-pulse]');
+    if (pulse) pulse.animate([{ transform: 'scale(1)', opacity: .75 }, { transform: 'scale(1.4)', opacity: 0, offset: .7 }, { transform: 'scale(1.4)', opacity: 0 }], { duration: 2800, iterations: Infinity, easing: 'ease-out' });
+  }
+
+  setupReveal() {
+    if (!('IntersectionObserver' in window)) return;
+    const els = document.querySelectorAll('[data-reveal]');
+    if (this.reduce) return;
+    const show = (el) => {
+      const t = el.dataset.reveal;
+      el.style.opacity = '1'; el.style.translate = '0 0';
+      if (t === 'words') {
+        /* as palavras já começam escondidas no template */
+      } else if (t === 'blur') { el.style.filter = 'blur(0)'; el.style.scale = '1'; }
+      if (t === 'count') el.querySelectorAll('[data-count]').forEach((n, i) => setTimeout(() => this.countUp(n), i * 120));
+      if (t === 'bars') el.querySelectorAll('[data-bar]').forEach((b, i) => setTimeout(() => { b.style.width = b.dataset.bar + '%'; }, 120 + i * 120));
+      if (t === 'words') el.querySelectorAll('[data-word]').forEach((w, i) => setTimeout(() => { w.style.opacity = '1'; w.style.translate = '0 0'; }, i * 70));
+      if (t === 'mask' || t === 'img') el.style.clipPath = 'inset(-10% -2% -10% -2%)';
+      if (t === 'img') el.style.scale = '1';
+    };
+    this.io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { const c = e.target.__revealChild; if (c) show(c); if (e.target.dataset.reveal !== undefined) show(e.target); this.io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: .08 });
+    let group = 0, lastTop = null;
+    els.forEach((el) => {
+      const t = el.dataset.reveal;
+      const top = Math.round(el.getBoundingClientRect().top);
+      group = lastTop !== null && Math.abs(top - lastTop) < 40 ? group + 1 : 0; lastTop = top;
+      const d = Math.min(group, 5) * .1;
+      const ease = 'cubic-bezier(.16,1,.3,1)';
+      if (t === 'blur') {
+        el.style.opacity = '0'; el.style.translate = '0 30px'; el.style.scale = '.985'; el.style.filter = 'blur(9px)';
+        el.style.transition = `opacity .9s ease ${d}s, translate 1.1s ${ease} ${d}s, scale 1.1s ${ease} ${d}s, filter 1s ease ${d}s`;
+      } else if (t === 'mask') {
+        el.style.clipPath = 'inset(0 -2% 100% -2%)'; el.style.translate = '0 24px'; el.style.opacity = '0';
+        el.style.transition = `clip-path 1.2s ${ease} ${d}s, translate 1.2s ${ease} ${d}s, opacity .6s ease ${d}s`;
+      } else if (t === 'img') {
+        el.style.clipPath = 'inset(8% 8% 8% 8% round 24px)'; el.style.scale = '1.04'; el.style.opacity = '0';
+        el.style.transition = `clip-path 1.3s ${ease} ${d}s, scale 1.6s ${ease} ${d}s, opacity .8s ease ${d}s`;
+      } else {
+        el.style.opacity = '0'; el.style.translate = '0 32px';
+        el.style.transition = `opacity 1s ease ${d}s, translate 1.1s ${ease} ${d}s`;
+      }
+      if (t === 'mask' && el.parentElement) { el.parentElement.__revealChild = el; this.io.observe(el.parentElement); }
+      else this.io.observe(el);
+    });
+  }
+
+  countUp(el) {
+    const target = parseFloat(el.dataset.count) || 0, dur = 1500, t0 = performance.now();
+    const step = (t) => {
+      const p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+      el.textContent = String(Math.round(target * e));
+      if (p < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+
+  drawRail() {
+    // 07 · a linha cresce com a rolagem e cada marco acende quando ela chega
+    const rail = document.querySelector('[data-rail]');
+    if (!rail) return;
+    const track = rail.querySelector('[data-rail-track]'), fill = rail.querySelector('[data-rail-fill]');
+    if (!track || !fill) return;
+    const r = track.getBoundingClientRect(), line = window.innerHeight * .58;
+    fill.style.height = Math.max(0, Math.min(1, (line - r.top) / r.height)) * 100 + '%';
+    rail.querySelectorAll('[data-step]').forEach((st) => {
+      const lit = st.getBoundingClientRect().top + 14 < line;
+      const dot = st.querySelector('[data-dot]'), title = st.querySelector('[data-step-title]');
+      if (dot) { dot.style.background = lit ? '#E3CD9F' : '#0B1628'; dot.style.borderColor = lit ? '#E3CD9F' : 'rgba(245,244,240,.25)'; dot.style.transform = lit ? 'scale(1.2)' : 'none'; }
+      if (title) title.style.color = lit ? '#F5F4F0' : 'rgba(245,244,240,.45)';
+    });
+  }
+
+  setupVitrine() {
+    const stage = document.querySelector('[data-vstage]');
+    if (!stage || stage.dataset.ready) return;
+    stage.dataset.ready = '1';
+    let x0 = null, moved = 0;
+    stage.addEventListener('pointerdown', (e) => { x0 = e.clientX; moved = 0; stage.style.cursor = 'grabbing'; });
+    stage.addEventListener('pointermove', (e) => { if (x0 !== null) moved = e.clientX - x0; });
+    const end = () => {
+      stage.style.cursor = 'grab';
+      if (x0 !== null && Math.abs(moved) > 48) this.goVitrine(moved < 0 ? 1 : -1);
+      x0 = null;
+    };
+    stage.addEventListener('pointerup', end);
+    stage.addEventListener('pointercancel', end);
+    stage.addEventListener('pointerleave', end);
+    stage.addEventListener('wheel', (e) => {
+      if (Math.abs(e.deltaX) < 24 || Math.abs(e.deltaX) < Math.abs(e.deltaY)) return;
+      e.preventDefault();
+      const now = performance.now();
+      if (now - (this.lastWheel || 0) < 600) return;
+      this.lastWheel = now;
+      this.goVitrine(e.deltaX > 0 ? 1 : -1);
+    }, { passive: false });
+    this.placeVitrine();
+  }
+
+  goVitrine(dir) {
+    const n = document.querySelectorAll('[data-vcard]').length || 1;
+    if (this.vLock) return;
+    this.vLock = true;
+    setTimeout(() => { this.vLock = false; }, 650);
+    const cap = document.querySelector('[data-vcap]');
+    if (cap) { cap.style.opacity = '0'; cap.style.translate = (dir > 0 ? '14px' : '-14px') + ' 0'; }
+    setTimeout(() => this.setState({ vi: ((this.state.vi || 0) + dir + n) % n }), 180);
+  }
+
+  placeVitrine() {
+    const cards = [].slice.call(document.querySelectorAll('[data-vcard]'));
+    if (!cards.length) return;
+    const n = cards.length, i = (this.state.vi || 0) % n;
+    const small = window.innerWidth < 760;
+    cards.forEach((el, k) => {
+      const d = (k - i + n) % n;
+      let st;
+      if (d === 0) st = { left: '50%', w: small ? '72%' : '58%', s: 1, blur: 0, o: 1, z: 20 };
+      else if (d === 1) st = { left: small ? '92%' : '86%', w: small ? '52%' : '42%', s: .9, blur: 3, o: .5, z: 10 };
+      else if (d === n - 1) st = { left: small ? '8%' : '14%', w: small ? '52%' : '42%', s: .9, blur: 3, o: .5, z: 10 };
+      else st = { left: '50%', w: '42%', s: .78, blur: 6, o: 0, z: 1 };
+      el.style.left = st.left;
+      el.style.width = st.w;
+      el.style.transform = `translate(-50%,-50%) scale(${st.s})`;
+      el.style.filter = st.blur ? `blur(${st.blur}px)` : 'none';
+      el.style.opacity = String(st.o);
+      el.style.zIndex = String(st.z);
+      el.style.pointerEvents = st.o ? 'auto' : 'none';
+      el.style.cursor = d === 0 ? 'grab' : 'pointer';
+      el.onclick = d === 1 ? () => this.goVitrine(1) : d === n - 1 ? () => this.goVitrine(-1) : null;
+    });
+    const active = cards[i];
+    const gi = active ? active.getAttribute('data-gi') : null;
+    document.querySelectorAll('[data-vcap-key]').forEach((b) => {
+      b.style.display = b.getAttribute('data-vcap-key') === String(gi) ? 'block' : 'none';
+    });
+    const cap = document.querySelector('[data-vcap]');
+    if (cap) { cap.style.opacity = '1'; cap.style.translate = '0 0'; }
+  }
+
+  componentDidUpdate() { this.placeVitrine(); }
+
+  drawMask() {
+    // 05 · máscara que revela: o círculo encolhe e descobre a cena de baixo
+    const wrap = document.querySelector('[data-mask]');
+    if (!wrap) return;
+    const top = wrap.querySelector('[data-mask-top]');
+    if (!top) return;
+    const r = wrap.getBoundingClientRect();
+    const span = Math.max(1, r.height - window.innerHeight);
+    const p = Math.max(0, Math.min(1, -r.top / span));
+    const e = p < .5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;
+    top.style.clipPath = 'circle(' + Math.max(0, 150 - e * 150).toFixed(1) + '% at 50% 50%)';
+    const a = wrap.querySelector('[data-mask-label="antes"]'), b = wrap.querySelector('[data-mask-label="depois"]');
+    if (a) a.style.color = e > .5 ? 'rgba(245,244,240,.35)' : '#F5F4F0';
+    if (b) b.style.color = e > .5 ? '#E3CD9F' : 'rgba(245,244,240,.35)';
+  }
+
+  setupMarquee() {
+    const m = document.querySelector('[data-marquee]');
+    if (!m || this.reduce || !m.animate) return;
+    m.animate([{ transform: 'translateX(0)' }, { transform: 'translateX(-50%)' }], { duration: 48000, iterations: Infinity, easing: 'linear' });
+  }
+
+  renderVals() {
+    const PCAPS = ['Sala de atendimento','Sala de atendimento','Mesa de trabalho','Estante iluminada','Segunda sala','Segunda sala','Recepção','Recepção e copa','Hall de entrada','Lavabo'];
+    const PCUR = (((this.state.pg || 0) % PCAPS.length) + PCAPS.length) % PCAPS.length;
+    const BCAPS = ['Varanda','Vista livre do nascente','Sala de estar e jantar','Sala de estar','Sala de TV','Sala de jantar','Cozinha','Cozinha e área de serviço','Suíte','Suíte','Suíte · acesso ao closet','Quarto','Banheiro social'];
+    const ACAPS = ['Sala climatizada','Sala de estar e jantar','Sala de estar','Corredor','Suíte','Suíte · armários','Quarto','Quarto · armários','Escritório','Escritório · estante','Banheiro','Cozinha','Cozinha','Lavanderia'];
+    const ACUR = (((this.state.ag || 0) % ACAPS.length) + ACAPS.length) % ACAPS.length;
+    const BCUR = (((this.state.bg || 0) % BCAPS.length) + BCAPS.length) % BCAPS.length;
+    const VCAPS = ['Living com vista para o mar','Sala de estar integrada','Living','Varanda gourmet','Cantinho do café','Sala de jantar','Jantar integrado ao living','Painel em madeira','Cozinha planejada','Suíte','Lavabo','Banheiro'];
+    const VCUR = (((this.state.vg || 0) % VCAPS.length) + VCAPS.length) % VCAPS.length;
+    const TABBASE = "background:transparent;border:0;padding:0 0 8px;font-family:Inter,'Helvetica Neue',sans-serif;font-size:14px;letter-spacing:.06em;cursor:pointer;transition:color .3s,border-color .3s;";
+    const name = this.props.brokerName ?? 'Diélia Cutrim';
+    const phone = String(this.props.whatsapp ?? '5598996191542').replace(/\D/g, '');
+    const ig = String(this.props.instagram ?? 'dieliacutrim_imob').replace(/^@/, '');
+    const email = this.props.email ?? 'dieliacutrim.imob@gmail.com';
+    const onlyConsult = this.props.priceOnRequest ?? false;
+    const wa = (msg) => `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+    const builders = ['MB Engenharia', 'Ergus Engenharia', 'Sá Cavalcante', 'Dom Corporação', 'Delman', 'Mota Machado', 'Monteplan Engenharia', 'Hiali'];
+    const all = [
+      ['Fernando de Noronha', 'Araçagy · São Luís', 'Casas duplex de 103 a 118 m² · condomínio fechado', 'Sob Consulta', 'MB Engenharia'],
+      ['Prime Cohama', 'Altos do Calhau · São Luís', 'Casas duplex de 140 m² · condomínio fechado', 'Sob Consulta', 'MB Engenharia'],
+      ['Reserva Rangedor', 'Alto do Calhau · São Luís', 'Casas duplex de 189 m² · alto padrão exclusivo', 'Sob Consulta', 'MB Engenharia'],
+      ['Nexus Renascença', 'Renascença · São Luís', 'Studios, 3 suítes ou salas comerciais · ecossistema urbano', 'Sob Consulta', 'Ergus Engenharia'],
+      ['Zion', 'Ponta d\'Areia · São Luís', 'Apartamentos de 148 m² · 1 por andar com design biofílico', 'Sob Consulta', 'Ergus Engenharia'],
+      ['São Luís Offices', 'Areinha · São Luís', 'Salas comerciais de 28 a 541 m² · em frente ao polo jurídico', 'Sob Consulta', 'Sá Cavalcante'],
+      ['Lagoa Corporate & Offices', 'Ponta d\'Areia · São Luís', 'Salas e lajes de 33 a 1.008 m² · padrão corporativo Triple A', 'Sob Consulta', 'Sá Cavalcante'],
+      ['Reserva Península', 'Península · São Luís', 'Apartamentos de 127 a 171 m² · 4 suítes com lazer de clube', 'Sob Consulta', 'Sá Cavalcante'],
+      ['Dom Manuel Residencial', 'Ponta d\'Areia · São Luís', 'Apartamentos de 116 a 135 m² · torre única de alto padrão', 'Sob Consulta', 'Dom Corporação'],
+      ['Studio Design 7', 'Península · São Luís', 'Studios e apartamentos de 30 a 98 m² · investimento moderno', 'Sob Consulta', 'Delman'],
+      ['Landscape', 'Calhau · São Luís', 'Apartamentos de 88 a 103 m² · sofisticação e lazer premium', 'Sob Consulta', 'Delman'],
+      ['The View', 'Ponta d\'Areia · São Luís', 'Apartamentos de 36 a 101 m² · a melhor vista da Península', 'Sob Consulta', 'Delman'],
+      ['Quartier 22', 'Península · São Luís', 'Apartamentos de 165 m² · 4 suítes com vista mar', 'Sob Consulta', 'Delman'],
+      ['Sky Residence', 'Ponta d\'Areia · São Luís', 'Apartamentos de 246 m² · 1 por andar estilo resort', 'Sob Consulta', 'Delman'],
+      ['Wave', 'Litorânea · São Luís', 'Apartamentos de 293 m² · piscina privativa na varanda', 'Sob Consulta', 'Delman'],
+      ['Reserva São Marcos', 'São Marcos · São Luís', 'Apartamentos de 67 a 104 m² · até 3 suítes ao lado do mar', 'Sob Consulta', 'Mota Machado'],
+      ['Entre Rios', 'Jardim Renascença · São Luís', 'Apartamentos de 125 a 156 m² · 3 suítes com varanda gourmet', 'Sob Consulta', 'Mota Machado'],
+      ['Edifício Bossa', 'Jardim Renascença · São Luís', 'Apartamentos de 191 a 196 m² · 4 suítes e lazer de alto luxo', 'Sob Consulta', 'Mota Machado'],
+      ['Al Mare', 'São Marcos · São Luís', 'Apartamentos de 215 a 235 m² · 4 suítes prontas para morar', 'Sob Consulta', 'Mota Machado'],
+      ['Renaissance Conceito', 'Jardim Renascença · São Luís', 'Apartamentos de 82 a 110 m² · até 3 suítes com design sofisticado', 'Sob Consulta', 'Monteplan Engenharia'],
+      ['Le Noir Boutique Residence', 'Jardim Renascença · São Luís', 'Studios e apartamentos de 33 a 62 m² · conceito Home Boutique', 'Sob Consulta', 'Hiali'],
+      ['Vento Leste Residence', 'Ponta d\'Areia · São Luís', 'Apartamentos exclusivos · sofisticação a poucos passos do mar', 'Sob Consulta', 'Hiali'],
+    ];
+    const PHOTOS = {"imovel-1":"fotos/imovel-1.webp","imovel-2":"fotos/imovel-2.webp","imovel-4":"fotos/imovel-4.webp","imovel-3":"fotos/imovel-3.webp","imovel-6":"fotos/imovel-6.webp","imovel-9":"fotos/imovel-9.webp","imovel-16":"fotos/imovel-16.webp","imovel-17":"fotos/imovel-17.webp","imovel-18":"fotos/imovel-18.webp","imovel-19":"fotos/imovel-19.webp","imovel-5":"fotos/imovel-5.webp","imovel-7":"fotos/imovel-7.webp","imovel-8":"fotos/imovel-8.webp","imovel-20":"fotos/imovel-20.webp","imovel-21":"fotos/imovel-21.webp","imovel-22":"fotos/imovel-22.webp","imovel-10":"fotos/imovel-10.webp","imovel-11":"fotos/imovel-11.webp","imovel-12":"fotos/imovel-12.webp","imovel-13":"fotos/imovel-13.webp","imovel-14":"fotos/imovel-14.webp","imovel-15":"fotos/imovel-15.webp"};
+    const activeBuilder = this.state.builder || 'Todas';
+    const list = activeBuilder === 'Todas' ? all : all.filter((p) => p[4] === activeBuilder);
+    const ring = [
+      ['Fernando de Noronha', 'MB Engenharia', '1'],
+      ['Zion', 'Ergus Engenharia', '5'],
+      ['Reserva Península', 'Sá Cavalcante', '8'],
+      ['The View', 'Delman', '12'],
+      ['Al Mare', 'Mota Machado', '19'],
+      ['Renaissance Conceito', 'Monteplan Engenharia', '20'],
+      ['Le Noir Boutique Residence', 'Hiali', '21'],
+    ];
+    const N = 28;
+    const narrow = this.state.vw <= 860;
+    return {
+      brokerName: name,
+      creciLabel: this.props.creci ?? 'CRECI 7653',
+      igHandle: '@' + ig,
+      waLink: wa(`Olá, ${name}! Gostaria de agendar uma consultoria exclusiva.`),
+      isVenda: (this.state.stock || 'venda') === 'venda',
+      isAluguel: this.state.stock === 'aluguel',
+      showVenda: () => this.setState({ stock: 'venda' }),
+      showAluguel: () => this.setState({ stock: 'aluguel' }),
+      tabVendaStyle: TABBASE + (this.state.stock === 'aluguel' ? 'color:rgba(245,244,240,.55);border-bottom:1px solid transparent' : 'color:#F5F4F0;border-bottom:1px solid #C4A05C'),
+      tabAluguelStyle: TABBASE + (this.state.stock === 'aluguel' ? 'color:#F5F4F0;border-bottom:1px solid #C4A05C' : 'color:rgba(245,244,240,.55);border-bottom:1px solid transparent'),
+      varandasPhotos: VCAPS.map((c, i, _a, PFX = 'varandas') => ({ src: 'fotos/varandas-' + String(i + 1).padStart(2, '0') + '.jpeg', alt: 'Varandas de São Marcos · ' + c, style: 'position:absolute;inset:0;background:url(fotos/' + PFX + '-' + String(i + 1).padStart(2, '0') + '.jpeg) center/cover no-repeat;transition:opacity .6s ease,transform 1.2s cubic-bezier(.2,.7,.2,1);opacity:' + (i === VCUR ? 1 : 0) + ';transform:scale(' + (i === VCUR ? 1 : 1.04) + ')' })),
+      varandasCaption: VCAPS[VCUR],
+      varandasCount: String(VCUR + 1).padStart(2, '0') + ' / ' + VCAPS.length,
+      varandasPrev: () => this.setState((s) => ({ vg: (s.vg || 0) - 1 })),
+      varandasNext: () => this.setState((s) => ({ vg: (s.vg || 0) + 1 })),
+      waVarandas: wa(`Olá, ${name}! Tenho interesse no apartamento à venda no Varandas de São Marcos (Ponta do Farol). Pode me passar o valor e mais detalhes?`),
+      brisasPhotos: BCAPS.map((c, i, _a, PFX = 'brisas') => ({ src: 'fotos/brisas-' + String(i + 1).padStart(2, '0') + '.jpeg', alt: 'Brisas Nascente · ' + c, style: 'position:absolute;inset:0;background:url(fotos/' + PFX + '-' + String(i + 1).padStart(2, '0') + '.jpeg) center/cover no-repeat;transition:opacity .6s ease,transform 1.2s cubic-bezier(.2,.7,.2,1);opacity:' + (i === BCUR ? 1 : 0) + ';transform:scale(' + (i === BCUR ? 1 : 1.04) + ')' })),
+      brisasCaption: BCAPS[BCUR],
+      brisasCount: String(BCUR + 1).padStart(2, '0') + ' / ' + String(BCAPS.length).padStart(2, '0'),
+      brisasPrev: () => this.setState((s) => ({ bg: (s.bg || 0) - 1 })),
+      brisasNext: () => this.setState((s) => ({ bg: (s.bg || 0) + 1 })),
+      waBrisas: wa(`Olá, ${name}! Tenho interesse no apartamento à venda no Brisas Nascente (Altos do Calhau). Pode me passar o valor e mais detalhes?`),
+      arcoPhotos: ACAPS.map((c, i) => ({ alt: 'Arco Verde Vinhais · ' + c, style: 'position:absolute;inset:0;background:url(fotos/arco-' + String(i + 1).padStart(2, '0') + '.jpeg) center/cover no-repeat;transition:opacity .6s ease,transform 1.2s cubic-bezier(.2,.7,.2,1);opacity:' + (i === ACUR ? 1 : 0) + ';transform:scale(' + (i === ACUR ? 1 : 1.04) + ')' })),
+      arcoCaption: ACAPS[ACUR],
+      arcoCount: String(ACUR + 1).padStart(2, '0') + ' / ' + String(ACAPS.length).padStart(2, '0'),
+      arcoPrev: () => this.setState((s) => ({ ag: (s.ag || 0) - 1 })),
+      arcoNext: () => this.setState((s) => ({ ag: (s.ag || 0) + 1 })),
+      waArco: wa(`Olá, ${name}! Tenho interesse no apartamento à venda no Arco Verde Vinhais (porteira fechada). Pode me passar o valor e mais detalhes?`),
+      patioPhotos: PCAPS.map((c, i, _a, PFX = 'patio') => ({ src: 'fotos/patio-' + String(i + 1).padStart(2, '0') + '.jpeg', alt: 'Sala Pátio Jardins · ' + c, style: 'position:absolute;inset:0;background:url(fotos/' + PFX + '-' + String(i + 1).padStart(2, '0') + '.jpeg) center/cover no-repeat;transition:opacity .6s ease,transform 1.2s cubic-bezier(.2,.7,.2,1);opacity:' + (i === PCUR ? 1 : 0) + ';transform:scale(' + (i === PCUR ? 1 : 1.04) + ')' })),
+      patioCaption: PCAPS[PCUR],
+      patioCount: String(PCUR + 1).padStart(2, '0') + ' / ' + PCAPS.length,
+      patioPrev: () => this.setState((s) => ({ pg: (s.pg || 0) - 1 })),
+      patioNext: () => this.setState((s) => ({ pg: (s.pg || 0) + 1 })),
+      waPatio: wa(`Olá, ${name}! Tenho interesse no aluguel da sala no Pátio Jardins. Pode me passar o valor e mais detalhes?`),
+      igLink: `https://instagram.com/${ig}`,
+      emailLabel: email,
+      mailLink: `mailto:${email}?subject=${encodeURIComponent(`Consultoria imobiliária · ${name}`)}&body=${encodeURIComponent(`Olá, ${name}!\n\nVi o seu site e gostaria de conversar sobre um imóvel.\n\nO que procuro: (apartamento, casa ou lançamento)\nBairros de preferência:\nFaixa de investimento:\nMelhor horário para contato:\n\nObrigado(a)!`)}`,
+      wide: !narrow, narrow,
+      menuVisible: narrow && this.state.menuOpen,
+      menuOpenStr: String(this.state.menuOpen),
+      toggleMenu: () => this.setState((s) => ({ menuOpen: !s.menuOpen })),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      pauseRing: () => { this.paused = true; },
+      resumeRing: () => { this.paused = false; },
+      ringCards: Array.from({ length: N }, (_, i) => {
+        const r = ring[i % ring.length];
+        return { slotId: 'imovel-' + r[2], src: PHOTOS['imovel-' + r[2]] || '', kicker: r[1], name: r[0] };
+      }),
+      vitrineCols: narrow ? 'minmax(0,1fr)' : 'minmax(0,1.15fr) minmax(0,.85fr)',
+      activeProperty: (() => {
+        const i = (this.state.vi || 0) % list.length;
+        const [title, location, specs, price, builder] = list[i];
+        return { title, location, specs, builder, priceLabel: onlyConsult ? 'Sob Consulta' : price, link: wa(`Olá, ${name}! Gostaria de mais detalhes sobre o imóvel "${title}" (${location}).`) };
+      })(),
+      activeCount: String((((this.state.vi || 0) % list.length) + 1)).padStart(2, '0') + ' / ' + String(list.length).padStart(2, '0'),
+      askActive: () => {
+        const b = [].slice.call(document.querySelectorAll('[data-vcap-key]')).find((x) => x.style.display !== 'none');
+        const t = b && b.querySelector('h3') ? b.querySelector('h3').textContent.trim() : '';
+        const rowSpans = b ? b.querySelectorAll('div:first-child span') : [];
+        const bld = rowSpans.length ? rowSpans[0].textContent.trim() : '';
+        const loc = rowSpans.length > 2 ? rowSpans[2].textContent.trim() : '';
+        const msg = t
+          ? `Olá, ${name}! Vi o ${t}${bld ? ' (' + bld + ')' : ''}${loc ? ', em ' + loc.toLowerCase().replace(/(^|[ ·])([a-zà-ú])/g, (m0, a0, b0) => a0 + b0.toUpperCase()) : ''} no seu site e gostaria de mais detalhes.`
+          : `Olá, ${name}! Gostaria de conhecer os empreendimentos do seu portfólio.`;
+        window.open(wa(msg), '_blank', 'noopener');
+      },
+      vitrinePrev: () => this.goVitrine(-1),
+      vitrineNext: () => this.goVitrine(1),
+      builderChips: ['Todas'].concat(builders).map((b) => ({
+        label: b,
+        onSelect: () => this.setState({ builder: b, vi: 0 }),
+        style: 'font-family:Inter,\'Helvetica Neue\',sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:11px 18px;border-radius:999px;cursor:pointer;transition:all .35s ease;' + (b === activeBuilder
+          ? 'background:#C4A05C;border:1px solid #C4A05C;color:#0C1E33;font-weight:500'
+          : 'background:transparent;border:1px solid rgba(245,244,240,.22);color:rgba(245,244,240,.72);font-weight:300'),
+      })),
+      properties: list.map(([title, location, specs, price, builder], i) => ({
+        gi: all.findIndex((x) => x[0] === title), slotId: 'imovel-' + (all.findIndex((x) => x[0] === title) + 1), src: PHOTOS['imovel-' + (all.findIndex((x) => x[0] === title) + 1)] || '', title, location, specs, builder,
+        priceLabel: onlyConsult ? 'Sob Consulta' : price,
+        link: wa(`Olá, ${name}! Gostaria de mais detalhes sobre o imóvel "${title}" (${location}).`),
+      })),
+      stats: [
+        ['', 3, '+', 'anos dedicados ao alto padrão'], ['', 95, '', 'imóveis analisados por ano'],
+        ['', 12, '', 'bairros nobres acompanhados'], ['', 100, '%', 'atendimento reservado'],
+      ].map(([prefix, value, suffix, label]) => ({ prefix, value, suffix, label })),
+      bars: [['Ponta d\'Areia', 10.1], ['Renascença', 9.5], ['Calhau', 8.2], ['Ponta do Farol', 6.8], ['Olho d\'Água', 5.4]]
+        .map(([name, v]) => ({ name, pct: Math.round(v / 10.1 * 100), label: v.toFixed(1).replace('.', ',') + '%' })),
+      mix: [['Lançamentos', 40], ['Apartamentos', 28], ['Casas e condomínios', 14], ['Salas comerciais', 10], ['Locação', 8]]
+        .map(([name, v]) => ({ name, pct: v, label: v + '%' })),
+      steps: [
+        ['Etapa 01', 'Conversa inicial', 'Entendo o momento da sua família, o padrão desejado e o que não pode faltar no novo lar.'],
+        ['Etapa 02', 'Curadoria', 'Seleciono apenas os imóveis que fazem sentido para você, incluindo oportunidades fora dos anúncios.'],
+        ['Etapa 03', 'Visitas guiadas', 'Acompanho cada visita apontando pontos de atenção que passam despercebidos.'],
+        ['Etapa 04', 'Negociação', 'Conduzo a proposta e as condições com estratégia, sempre com você informada de tudo.'],
+        ['Etapa 05', 'Documentação e chaves', 'Cuido da papelada e dos prazos até o dia em que a chave fica na sua mão.'],
+      ].map(([num, title, body]) => ({ num, title, body })),
+      closingWords: 'Mais do que encontrar um imóvel, meu propósito é ajudar você a escolher o lugar certo para viver, investir e construir patrimônio.'.split(' '),
+      reasons: [
+        ['01', 'Curadoria criteriosa', 'Não se trata de apresentar o maior número de imóveis, mas de selecionar aqueles que realmente fazem sentido para você — em localização, padrão, arquitetura, diferenciais e potencial.'],
+        ['02', 'Conhecimento do mercado', 'Conheço as regiões mais valorizadas de São Luís e acompanho os movimentos do mercado para identificar oportunidades que vão além do que está simplesmente anunciado.'],
+        ['03', 'Negociação estratégica', 'Uma negociação de alto padrão exige análise, estratégia e atenção aos detalhes. Meu papel é conduzir cada etapa com segurança, buscando as melhores condições para a decisão.'],
+        ['04', 'Atendimento próximo e discreto', 'Cada cliente possui um momento, uma necessidade e uma visão de patrimônio. Por isso, o atendimento é conduzido de forma próxima, reservada e personalizada, do primeiro contato à entrega das chaves.'],
+        ['05', 'Acesso a pré-lançamentos', 'Boa parte das melhores oportunidades circula antes de chegar aos anúncios. Mantenho relação direta com incorporadoras e proprietários para apresentar a você o que ainda não está no mercado.'],
+        ['06', 'Visão de investimento', 'Cada escolha é analisada também pelo que ela representa no futuro: valorização da região, liquidez e potencial de retorno — para que o seu patrimônio cresça junto com a sua família.'],
+      ].map(([num, title, body]) => ({ num, title, body })),
+      igPosts: ['Post 1', 'Post 2', 'Post 3', 'Post 4'].map((label, i) => ({ slotId: 'ig-' + (i + 1), label })),
+    };
+  }
+}
+</script>
+</body>
+</html>
