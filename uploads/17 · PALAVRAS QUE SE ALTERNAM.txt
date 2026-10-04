@@ -1,0 +1,50 @@
+/* ══════════════════════════════════════════════════════════
+   17 · PALAVRAS QUE SE ALTERNAM
+   A lista sobe dentro de uma janela da altura de uma linha, e volta ao começo sem que se perceba o pulo.
+   ══════════════════════════════════════════════════════════ */
+
+<!-- ── HTML ──────────────────────────────────────────── -->
+<div class="js-troca">
+  <span>Corte o</span>
+  <span class="janela"><span class="fita">
+    <span>silêncio</span><span>excesso</span><span>tempo</span><span>silêncio</span>
+  </span></span>
+</div>
+
+<!-- repita o primeiro item no fim para o laço fechar sem pulo -->
+
+/* ── CSS DE APOIO ───────────────────────────────────── */
+.js-troca{font-family:var(--display);font-size:26px;color:#fff;display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center}
+.js-troca .janela{position:relative;height:1.3em;overflow:hidden;display:inline-block;vertical-align:bottom}
+.js-troca .janela span{display:block;transition:transform .5s cubic-bezier(.16,1,.3,1);color:#ff8095}
+
+/* ── JAVASCRIPT ─────────────────────────────────────── */
+FX.j17 = function(card){
+  var janela = card.querySelector('.janela');
+  var fita = janela.querySelector('.fita');
+  var itens = fita.children.length;
+  var i = 0, id;
+  function trocar(){
+    i++;
+    fita.style.transition = 'transform .5s cubic-bezier(.16,1,.3,1)';
+    fita.style.transform = 'translateY(' + (-i * 100 / itens) + '%)';
+    if(i === itens - 1){                    /* volta invisível ao início */
+      setTimeout(function(){
+        fita.style.transition = 'none';
+        fita.style.transform = 'translateY(0)';
+        i = 0;
+      }, 520);
+    }
+  }
+  id = setInterval(trocar, 1800);
+  return function(){ clearInterval(id); };
+};
+
+/* ── COMO LIGAR ─────────────────────────────────────── */
+/* Troque "document" pelo elemento que envolve a animação,
+   se você tiver mais de uma cópia na mesma página. */
+FX.j17(document);
+
+/* Fonte: vitrine de 36 animações em JavaScript do canal Não Codei.
+   Cole no seu site ou entregue para uma inteligência artificial
+   pedindo para adaptar às cores e ao conteúdo da sua página. */
